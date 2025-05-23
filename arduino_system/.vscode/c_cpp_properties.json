@@ -1,0 +1,35 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/home/khh/ttu_ws/install/arduino_hardware_interface/include/**",
+        "/home/khh/SIM/ws/install/rom_interfaces/include/**",
+        "/home/khh/hw/ws/install/teleop_twist_joy/include/**",
+        "/home/khh/hw/ws/install/serial/include/**",
+        "/home/khh/hw/ws/install/diffdrive_stm32/include/**",
+        "/home/khh/sim/ws/install/vizanti_msgs/include/**",
+        "/home/khh/sim/ws/install/interface_test/include/**",
+        "/home/khh/sim/ws/install/custom/include/**",
+        "/home/khh/ros2_ws/install/vizanti_msgs/include/**",
+        "/home/khh/ros2_ws/install/teleop_twist_joy/include/**",
+        "/home/khh/ros2_ws/install/stm32f1_system_interface/include/**",
+        "/home/khh/pupper/ws/install/champ_msgs/include/**",
+        "/home/khh/pupper/ws/install/champ/include/**",
+        "/home/khh/bobo_sim/ws/install/vizanti_msgs/include/**",
+        "/opt/ros/humble/include/**",
+        "/home/khh/pj_ws/src/arduino_system/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}

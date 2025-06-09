@@ -40,4 +40,9 @@ add_executable(odom_node src/odometry_node.cpp)
 ament_target_dependencies(odom_node rclcpp geometry_msgs std_msgs nav_msgs tf2_ros tf2 tf2_geometry_msgs)
 install(TARGETS odom_node DESTINATION lib/${PROJECT_NAME})
 
+install(DIRECTORY
+ launch
+ DESTINATION share/${PROJECT_NAME}/
+)
+
 ament_package()

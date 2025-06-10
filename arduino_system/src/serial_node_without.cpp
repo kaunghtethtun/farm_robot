@@ -8,6 +8,7 @@
 #include <string.h>
 #include <errno.h>
 #include <sstream>
+#include <algorithm> 
 
 class SerialNode : public rclcpp::Node
 {
@@ -120,8 +121,8 @@ private:
             std_msgs::msg::Int32MultiArray msg;
             msg.data = {values[1], values[2], values[3], values[4]};
             encoder_pub_->publish(msg);
-            RCLCPP_INFO(this->get_logger(), "Published: Renc=%d, Lenc=%d, Rvel=%d, Lvel=%d",
-                        values[1], values[2], values[3], values[4]);
+            // RCLCPP_INFO(this->get_logger(), "Published: Renc=%d, Lenc=%d, Rvel=%d, Lvel=%d",
+            //             values[1], values[2], values[3], values[4]);
           }
           else
           {
@@ -138,20 +139,17 @@ private:
 
   void cmdCallback(const geometry_msgs::msg::Twist::SharedPtr msg)
   {
-    double v_left = static_cast<double>(msg->linear.x);
-    double v_right = static_cast<double>(msg->angular.z);
-    double rpm_left = (v_left / (2 * M_PI * 0.03)) * 60.0;
-    double rpm_right = (v_right / (2 * M_PI * 0.03)) * 60.0;
-    //double rpm_left = 100*v_left;
-    //double rpm_right = 100*v_right;
-    if(rpm_left > 80) rpm_left = 60;
-    if(rpm_right > 80) rpm_right = 60;
+
+    double rpm_left = static_cast<double>(msg->linear.x);     // m/s
+    double rpm_right = static_cast<double>(msg->angular.z); // rad/s
+
     std::ostringstream ss;
-    ss << "1" << "," << rpm_right << "," << rpm_left << ";" << "\n";
+    ss << "1" << "," << rpm_left << "," << rpm_right << ";" << "\n";
     std::string out = ss.str();
     ::write(serial_fd_, out.c_str(), out.size());
-    RCLCPP_INFO(this->get_logger(), "Published: Rvel=%f, Lvel=%f",
-                    rpm_right, rpm_left);
+
+    RCLCPP_INFO(this->get_logger(), "Published: Rvel=%f, Lvel=%f", rpm_left, rpm_right);
+
   }
 };
 

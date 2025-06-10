@@ -7,6 +7,7 @@
 #include "geometry_msgs/msg/transform_stamped.hpp"
 #include <tf2/LinearMath/Quaternion.h>
 #include <tf2_geometry_msgs/tf2_geometry_msgs.hpp>  // <--- Required for tf2::toMsg
+#include <algorithm> 
 
 class OdometryNode : public rclcpp::Node {
 public:
@@ -81,11 +82,19 @@ private:
         RCLCPP_INFO(this->get_logger(), "Published: vel=%f, vel=%f",v, w);
         double v_left = v - (w * WHEEL_BASE / 2.0);
         double v_right = v + (w * WHEEL_BASE / 2.0);
-        //RCLCPP_INFO(this->get_logger(), "Published: v_left=%f, v_right=%f",v_left, v_right);
+        RCLCPP_INFO(this->get_logger(), "Published: v_left=%f, v_right=%f",v_left, v_right);
+
+        // Convert linear velocity to RPM
+        double rpm_left = (v_left / (2 * M_PI * WHEEL_RADIUS)) * 60.0;
+        double rpm_right = (v_right / (2 * M_PI * WHEEL_RADIUS)) * 60.0;
+
+        double rpm_max = 60.0; // Maximum RPM limit
+        rpm_left = std::clamp(rpm_left, -rpm_max, rpm_max);
+        rpm_right = std::clamp(rpm_right, -rpm_max, rpm_max);
 
         geometry_msgs::msg::Twist motor_cmd;
-        motor_cmd.linear.x = v_left;
-        motor_cmd.angular.z = v_right;
+        motor_cmd.linear.x = rpm_left;
+        motor_cmd.angular.z = rpm_right;
         motor_pub_->publish(motor_cmd);
     }
 
@@ -95,7 +104,7 @@ private:
 
     // Constants
     const double WHEEL_RADIUS = 0.03;   // meters
-    const double WHEEL_BASE = 0.16;     // meters
+    const double WHEEL_BASE = 0.24;     // meters
     const int TICKS_PER_REV = 940;
 
     double x_, y_, theta_;

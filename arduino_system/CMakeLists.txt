@@ -41,8 +41,7 @@ ament_target_dependencies(odom_node rclcpp geometry_msgs std_msgs nav_msgs tf2_r
 install(TARGETS odom_node DESTINATION lib/${PROJECT_NAME})
 
 install(DIRECTORY
- launch
- DESTINATION share/${PROJECT_NAME}/
+	launch
+	DESTINATION share/${PROJECT_NAME}
 )
-
 ament_package()

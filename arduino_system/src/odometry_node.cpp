@@ -1,3 +1,4 @@
+// odometry_node.cpp
 #include "rclcpp/rclcpp.hpp"
 #include "std_msgs/msg/int32_multi_array.hpp"
 #include "geometry_msgs/msg/twist.hpp"
@@ -30,7 +31,7 @@ private:
     void encoderCallback(const std_msgs::msg::Int32MultiArray::SharedPtr msg) {
         int left_ticks = msg->data[0];
         int right_ticks = msg->data[1];
-        RCLCPP_INFO(this->get_logger(), "Received: left=%d, right=%d", left_ticks, right_ticks);
+
         auto now = this->now();
         double dt = (now - last_time_).seconds();
         last_time_ = now;
@@ -66,7 +67,7 @@ private:
         geometry_msgs::msg::TransformStamped tf;
         tf.header.stamp = now;
         tf.header.frame_id = "odom";
-        tf.child_frame_id = "base_footprint";
+        tf.child_frame_id = "base_link";
         tf.transform.translation.x = x_;
         tf.transform.translation.y = y_;
         tf.transform.rotation = odom.pose.pose.orientation;
@@ -77,7 +78,7 @@ private:
         // Convert cmd_vel to wheel speeds
         double v = msg->linear.x;
         double w = msg->angular.z;
-        //RCLCPP_INFO(this->get_logger(), "Published: vel=%f, vel=%f",v, w);
+        RCLCPP_INFO(this->get_logger(), "Published: vel=%f, vel=%f",v, w);
         double v_left = v - (w * WHEEL_BASE / 2.0);
         double v_right = v + (w * WHEEL_BASE / 2.0);
         //RCLCPP_INFO(this->get_logger(), "Published: v_left=%f, v_right=%f",v_left, v_right);

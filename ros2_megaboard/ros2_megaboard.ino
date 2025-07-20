@@ -25,8 +25,9 @@ void loop()
   if (now - lastUpdateTime >= 50) {  // 100ms interval
     getMotorData(now - lastUpdateTime);
     updateMotorControl();
+    onRequestEncoder();
     lastUpdateTime = now;
   }
   cmdMessenger.feedinSerialData();
-  onRequestEncoder();
+  //onRequestEncoder();
 }

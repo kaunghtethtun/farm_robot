@@ -22,7 +22,7 @@ public:
             std::bind(&OdometryNode::cmdVelCallback, this, std::placeholders::_1));
 
         motor_pub_ = this->create_publisher<geometry_msgs::msg::Twist>("motor_command", 10);
-        odom_pub_ = this->create_publisher<nav_msgs::msg::Odometry>("odom", 10);
+        odom_pub_ = this->create_publisher<nav_msgs::msg::Odometry>("diff_controller/odom", 10);
         tf_broadcaster_ = std::make_shared<tf2_ros::TransformBroadcaster>(this);
 
         last_time_ = this->now();
@@ -103,7 +103,7 @@ private:
     }
 
     // Constants
-    const double WHEEL_RADIUS = 0.03;   // meters
+    const double WHEEL_RADIUS = 0.033;   // meters
     const double WHEEL_BASE = 0.24;     // meters
     const int TICKS_PER_REV = 940;
 

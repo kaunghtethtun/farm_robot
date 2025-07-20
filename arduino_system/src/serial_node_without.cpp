@@ -21,7 +21,7 @@ public:
       std::bind(&SerialNode::cmdCallback, this, std::placeholders::_1)
     );
 
-    serial_fd_ = open("/dev/ttyACM0", O_RDWR | O_NOCTTY | O_NONBLOCK);
+    serial_fd_ = open("/dev/ttyUSB0", O_RDWR | O_NOCTTY | O_NONBLOCK);
     if (serial_fd_ < 0)
     {
       RCLCPP_ERROR(this->get_logger(), "Failed to open serial port: %s", strerror(errno));
@@ -144,7 +144,7 @@ private:
     double rpm_right = static_cast<double>(msg->angular.z); // rad/s
 
     std::ostringstream ss;
-    ss << "1" << "," << rpm_left << "," << rpm_right << ";" << "\n";
+    ss << "1" << "," << rpm_right << "," << rpm_left << ";" << "\n";
     std::string out = ss.str();
     ::write(serial_fd_, out.c_str(), out.size());
 

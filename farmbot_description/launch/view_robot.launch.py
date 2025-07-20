@@ -20,7 +20,7 @@ def generate_launch_description():
     declared_arguments.append(
         DeclareLaunchArgument(
             "description_file",
-            default_value="diffbot.urdf.xacro",
+            default_value="diffbot_description.urdf.xacro",
             description="URDF/XACRO description file with the robot.",
         )
     )
@@ -89,7 +89,7 @@ def generate_launch_description():
         # joint_state_publisher_node,
         robot_state_publisher_node,
         joint_state_node,
-        rviz_node,
+        # rviz_node,
     ]
 
     return LaunchDescription(declared_arguments + nodes)

@@ -38,7 +38,7 @@ def generate_launch_description():
 
     nodes = [
         description_launch,
-        rplidar_launch,
+        # rplidar_launch,
         arduino_launch,
     ]
 

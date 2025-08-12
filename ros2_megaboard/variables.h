@@ -11,7 +11,7 @@
 #define left_encoderA      18     // (interrupt numbers 5)
 #define left_encoderB      19     // (interrupt numbers 4)
 
-#define new_enc_ticks   940
+#define new_enc_ticks   1308
 
 
 int leftActSpeed = 0;

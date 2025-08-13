@@ -1,0 +1,27 @@
+[0.063s] Invoking command in '/home/mr_robot/robot_ws/build/farmbot_carto': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/mr_robot/robot_ws/build/farmbot_carto -- -j12 -l12
+[0.150s] Invoked command in '/home/mr_robot/robot_ws/build/farmbot_carto' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/mr_robot/robot_ws/build/farmbot_carto -- -j12 -l12
+[0.153s] Invoking command in '/home/mr_robot/robot_ws/build/farmbot_carto': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/mr_robot/robot_ws/build/farmbot_carto
+[0.169s] -- Install configuration: ""
+[0.170s] -- Up-to-date: /home/mr_robot/robot_ws/install/farmbot_carto/share/farmbot_carto//config
+[0.171s] -- Up-to-date: /home/mr_robot/robot_ws/install/farmbot_carto/share/farmbot_carto//config/rom_nav_2d.lua
+[0.171s] -- Up-to-date: /home/mr_robot/robot_ws/install/farmbot_carto/share/farmbot_carto//config/rom_map_2d.lua
+[0.171s] -- Up-to-date: /home/mr_robot/robot_ws/install/farmbot_carto/share/farmbot_carto//launch
+[0.171s] -- Up-to-date: /home/mr_robot/robot_ws/install/farmbot_carto/share/farmbot_carto//launch/localization.launch.py
+[0.172s] -- Up-to-date: /home/mr_robot/robot_ws/install/farmbot_carto/share/farmbot_carto//launch/occupancy_grid.launch.py
+[0.172s] -- Up-to-date: /home/mr_robot/robot_ws/install/farmbot_carto/share/farmbot_carto//launch/mapping.launch.py
+[0.174s] -- Up-to-date: /home/mr_robot/robot_ws/install/farmbot_carto/share/ament_index/resource_index/package_run_dependencies/farmbot_carto
+[0.174s] -- Up-to-date: /home/mr_robot/robot_ws/install/farmbot_carto/share/ament_index/resource_index/parent_prefix_path/farmbot_carto
+[0.174s] -- Up-to-date: /home/mr_robot/robot_ws/install/farmbot_carto/share/farmbot_carto/environment/ament_prefix_path.sh
+[0.174s] -- Up-to-date: /home/mr_robot/robot_ws/install/farmbot_carto/share/farmbot_carto/environment/ament_prefix_path.dsv
+[0.175s] -- Up-to-date: /home/mr_robot/robot_ws/install/farmbot_carto/share/farmbot_carto/environment/path.sh
+[0.175s] -- Up-to-date: /home/mr_robot/robot_ws/install/farmbot_carto/share/farmbot_carto/environment/path.dsv
+[0.176s] -- Up-to-date: /home/mr_robot/robot_ws/install/farmbot_carto/share/farmbot_carto/local_setup.bash
+[0.176s] -- Up-to-date: /home/mr_robot/robot_ws/install/farmbot_carto/share/farmbot_carto/local_setup.sh
+[0.176s] -- Up-to-date: /home/mr_robot/robot_ws/install/farmbot_carto/share/farmbot_carto/local_setup.zsh
+[0.176s] -- Up-to-date: /home/mr_robot/robot_ws/install/farmbot_carto/share/farmbot_carto/local_setup.dsv
+[0.177s] -- Up-to-date: /home/mr_robot/robot_ws/install/farmbot_carto/share/farmbot_carto/package.dsv
+[0.177s] -- Up-to-date: /home/mr_robot/robot_ws/install/farmbot_carto/share/ament_index/resource_index/packages/farmbot_carto
+[0.177s] -- Up-to-date: /home/mr_robot/robot_ws/install/farmbot_carto/share/farmbot_carto/cmake/farmbot_cartoConfig.cmake
+[0.177s] -- Up-to-date: /home/mr_robot/robot_ws/install/farmbot_carto/share/farmbot_carto/cmake/farmbot_cartoConfig-version.cmake
+[0.177s] -- Up-to-date: /home/mr_robot/robot_ws/install/farmbot_carto/share/farmbot_carto/package.xml
+[0.224s] Invoked command in '/home/mr_robot/robot_ws/build/farmbot_carto' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/mr_robot/robot_ws/build/farmbot_carto

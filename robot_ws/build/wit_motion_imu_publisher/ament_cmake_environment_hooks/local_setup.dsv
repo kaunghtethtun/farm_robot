@@ -1,0 +1,2 @@
+source;share/wit_motion_imu_publisher/environment/ament_prefix_path.sh
+source;share/wit_motion_imu_publisher/environment/path.sh

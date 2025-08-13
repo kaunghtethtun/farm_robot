@@ -1,0 +1,4 @@
+Invoking command in '/home/mr_robot/robot_ws/build/arduino_system': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/mr_robot/robot_ws/build/arduino_system -- -j12 -l12
+Invoked command in '/home/mr_robot/robot_ws/build/arduino_system' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/mr_robot/robot_ws/build/arduino_system -- -j12 -l12
+Invoking command in '/home/mr_robot/robot_ws/build/arduino_system': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/mr_robot/robot_ws/build/arduino_system
+Invoked command in '/home/mr_robot/robot_ws/build/arduino_system' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/mr_robot/robot_ws/build/arduino_system

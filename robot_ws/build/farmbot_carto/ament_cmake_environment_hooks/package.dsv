@@ -1,0 +1,4 @@
+source;share/farmbot_carto/local_setup.bash
+source;share/farmbot_carto/local_setup.dsv
+source;share/farmbot_carto/local_setup.sh
+source;share/farmbot_carto/local_setup.zsh

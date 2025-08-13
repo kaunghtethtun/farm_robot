@@ -1,0 +1,6 @@
+Invoking command in '/home/mr_robot/robot_ws/build/farmbot_carto': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/mr_robot/robot_ws/src/farm_robot-main/farmbot_carto -DCMAKE_INSTALL_PREFIX=/home/mr_robot/robot_ws/install/farmbot_carto
+Invoked command in '/home/mr_robot/robot_ws/build/farmbot_carto' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/mr_robot/robot_ws/src/farm_robot-main/farmbot_carto -DCMAKE_INSTALL_PREFIX=/home/mr_robot/robot_ws/install/farmbot_carto
+Invoking command in '/home/mr_robot/robot_ws/build/farmbot_carto': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/mr_robot/robot_ws/build/farmbot_carto -- -j12 -l12
+Invoked command in '/home/mr_robot/robot_ws/build/farmbot_carto' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/mr_robot/robot_ws/build/farmbot_carto -- -j12 -l12
+Invoking command in '/home/mr_robot/robot_ws/build/farmbot_carto': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/mr_robot/robot_ws/build/farmbot_carto
+Invoked command in '/home/mr_robot/robot_ws/build/farmbot_carto' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/mr_robot/robot_ws/build/farmbot_carto

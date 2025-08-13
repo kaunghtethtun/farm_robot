@@ -1,0 +1,6 @@
+Invoking command in '/home/mr_robot/robot_ws/build/farmbot_ekf': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/mr_robot/robot_ws/src/farm_robot-main/farmbot_ekf -DCMAKE_INSTALL_PREFIX=/home/mr_robot/robot_ws/install/farmbot_ekf
+Invoked command in '/home/mr_robot/robot_ws/build/farmbot_ekf' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/mr_robot/robot_ws/src/farm_robot-main/farmbot_ekf -DCMAKE_INSTALL_PREFIX=/home/mr_robot/robot_ws/install/farmbot_ekf
+Invoking command in '/home/mr_robot/robot_ws/build/farmbot_ekf': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/mr_robot/robot_ws/build/farmbot_ekf -- -j12 -l12
+Invoked command in '/home/mr_robot/robot_ws/build/farmbot_ekf' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/mr_robot/robot_ws/build/farmbot_ekf -- -j12 -l12
+Invoking command in '/home/mr_robot/robot_ws/build/farmbot_ekf': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/mr_robot/robot_ws/build/farmbot_ekf
+Invoked command in '/home/mr_robot/robot_ws/build/farmbot_ekf' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/mr_robot/robot_ws/build/farmbot_ekf

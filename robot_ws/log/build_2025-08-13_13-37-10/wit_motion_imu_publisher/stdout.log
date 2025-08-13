@@ -1,0 +1,19 @@
+[35m[1mConsolidate compiler generated dependencies of target imu[0m
+[100%] Built target imu
+-- Install configuration: ""
+-- Up-to-date: /home/mr_robot/robot_ws/install/wit_motion_imu_publisher/lib/wit_motion_imu_publisher/imu
+-- Up-to-date: /home/mr_robot/robot_ws/install/wit_motion_imu_publisher/share/ament_index/resource_index/package_run_dependencies/wit_motion_imu_publisher
+-- Up-to-date: /home/mr_robot/robot_ws/install/wit_motion_imu_publisher/share/ament_index/resource_index/parent_prefix_path/wit_motion_imu_publisher
+-- Up-to-date: /home/mr_robot/robot_ws/install/wit_motion_imu_publisher/share/wit_motion_imu_publisher/environment/ament_prefix_path.sh
+-- Up-to-date: /home/mr_robot/robot_ws/install/wit_motion_imu_publisher/share/wit_motion_imu_publisher/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/mr_robot/robot_ws/install/wit_motion_imu_publisher/share/wit_motion_imu_publisher/environment/path.sh
+-- Up-to-date: /home/mr_robot/robot_ws/install/wit_motion_imu_publisher/share/wit_motion_imu_publisher/environment/path.dsv
+-- Up-to-date: /home/mr_robot/robot_ws/install/wit_motion_imu_publisher/share/wit_motion_imu_publisher/local_setup.bash
+-- Up-to-date: /home/mr_robot/robot_ws/install/wit_motion_imu_publisher/share/wit_motion_imu_publisher/local_setup.sh
+-- Up-to-date: /home/mr_robot/robot_ws/install/wit_motion_imu_publisher/share/wit_motion_imu_publisher/local_setup.zsh
+-- Up-to-date: /home/mr_robot/robot_ws/install/wit_motion_imu_publisher/share/wit_motion_imu_publisher/local_setup.dsv
+-- Installing: /home/mr_robot/robot_ws/install/wit_motion_imu_publisher/share/wit_motion_imu_publisher/package.dsv
+-- Up-to-date: /home/mr_robot/robot_ws/install/wit_motion_imu_publisher/share/ament_index/resource_index/packages/wit_motion_imu_publisher
+-- Up-to-date: /home/mr_robot/robot_ws/install/wit_motion_imu_publisher/share/wit_motion_imu_publisher/cmake/wit_motion_imu_publisherConfig.cmake
+-- Up-to-date: /home/mr_robot/robot_ws/install/wit_motion_imu_publisher/share/wit_motion_imu_publisher/cmake/wit_motion_imu_publisherConfig-version.cmake
+-- Up-to-date: /home/mr_robot/robot_ws/install/wit_motion_imu_publisher/share/wit_motion_imu_publisher/package.xml

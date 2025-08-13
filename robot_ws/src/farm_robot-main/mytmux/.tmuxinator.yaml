@@ -1,0 +1,44 @@
+# ./.tmuxinator.yml
+
+name: FarmBot 
+root: ~/
+
+pre_window: export PS1=" \[$(tput sgr0)\]\[$(tput bold)\]\[\033[38;5;45m\]>>>\[$(tput sgr0)\] \[$(tput sgr0)\]"
+
+
+startup_window: Hardware
+# startup_pane: 0
+
+windows:
+  - Hardware: 
+      root: ~/
+      panes:
+        - clear; source ~/.bashrc; ros2 launch arduino_system hardware.launch.py use_imu:=true
+  - YDlidar: 
+      root: ~/
+      panes:
+        - clear; source ~/.bashrc; ros2 launch ydlidar_ros2_driver ydlidar_launch.py
+  - EKF: 
+      root: ~/
+      panes:
+        - clear; source ~/.bashrc; ros2 launch farmbot_ekf ekf.launch.py 
+  - Carto: 
+      root: ~/
+      panes:
+        - clear; source ~/.bashrc; sleep 3; ros2 launch farmbot_carto mapping.launch.py
+  - Nav2: 
+      root: ~/
+      panes:
+        - clear; source ~/.bashrc; sleep 3; ros2 launch farmbot_nav2 navigation_mapping_composable.launch.py
+  - Flutter: 
+      root: ~/devel_ws/
+      panes:
+        - clear; source ~/.bashrc; cd /home/mr_robot/Desktop/Git/rom_dynamics_robots/submodule_packages/ros_flutter_gui_app_web; python3 -m http.server 8000
+  - RosBridgeServer: 
+      root: ~/devel_ws/
+      panes:
+        - clear; source ~/.bashrc; ros2 launch rosbridge_server rosbridge_websocket_launch.xml
+  - Debug: 
+      root: ~/robot_ws/src
+      panes:
+        - clear; source ~/.bashrc;

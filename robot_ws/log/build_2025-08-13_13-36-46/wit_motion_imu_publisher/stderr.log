@@ -1,0 +1,7 @@
+[01m[K/home/mr_robot/robot_ws/src/farm_robot-main/wit_motion_imu_publisher/src/wit_c_sdk.c:[m[K In function ‘[01m[KWitCanDataIn[m[K’:
+[01m[K/home/mr_robot/robot_ws/src/farm_robot-main/wit_motion_imu_publisher/src/wit_c_sdk.c:238:27:[m[K [01;35m[Kwarning: [m[Kthis statement may fall through [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wimplicit-fallthrough=-Wimplicit-fallthrough=]8;;[m[K]
+  238 |                         if[01;35m[K([m[KucData[1] == 0x53)
+      |                           [01;35m[K^[m[K
+[01m[K/home/mr_robot/robot_ws/src/farm_robot-main/wit_motion_imu_publisher/src/wit_c_sdk.c:251:19:[m[K [01;36m[Knote: [m[Khere
+  251 |                   [01;36m[Kcase[m[K WIT_PROTOCOL_CAN:
+      |                   [01;36m[K^~~~[m[K

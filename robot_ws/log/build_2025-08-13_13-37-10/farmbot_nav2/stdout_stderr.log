@@ -1,0 +1,40 @@
+[35m[1mConsolidate compiler generated dependencies of target init_robot_pose[0m
+[100%] Built target init_robot_pose
+-- Install configuration: ""
+-- Up-to-date: /home/mr_robot/robot_ws/install/farmbot_nav2/lib/farmbot_nav2/init_robot_pose
+-- Up-to-date: /home/mr_robot/robot_ws/install/farmbot_nav2/share/farmbot_nav2/launch
+-- Up-to-date: /home/mr_robot/robot_ws/install/farmbot_nav2/share/farmbot_nav2/launch/navigation_localization_composable.launch.py
+-- Up-to-date: /home/mr_robot/robot_ws/install/farmbot_nav2/share/farmbot_nav2/launch/navigation_mapping_composable.launch.py
+-- Up-to-date: /home/mr_robot/robot_ws/install/farmbot_nav2/share/farmbot_nav2/launch/navigation_mapping.launch.py
+-- Up-to-date: /home/mr_robot/robot_ws/install/farmbot_nav2/share/farmbot_nav2/launch/online_async_launch_mapping_launch.py
+-- Up-to-date: /home/mr_robot/robot_ws/install/farmbot_nav2/share/farmbot_nav2/launch/online_async_launch_localization_launch.py
+-- Up-to-date: /home/mr_robot/robot_ws/install/farmbot_nav2/share/farmbot_nav2/config
+-- Up-to-date: /home/mr_robot/robot_ws/install/farmbot_nav2/share/farmbot_nav2/config/mapper_params_online_async_localization.yaml
+-- Up-to-date: /home/mr_robot/robot_ws/install/farmbot_nav2/share/farmbot_nav2/config/nav2_params_collision.yaml
+-- Up-to-date: /home/mr_robot/robot_ws/install/farmbot_nav2/share/farmbot_nav2/config/mapper_params_online_async_mapping.yaml
+-- Up-to-date: /home/mr_robot/robot_ws/install/farmbot_nav2/share/farmbot_nav2/config/nav2_params.yaml
+-- Up-to-date: /home/mr_robot/robot_ws/install/farmbot_nav2/share/farmbot_nav2/maps
+-- Up-to-date: /home/mr_robot/robot_ws/install/farmbot_nav2/share/farmbot_nav2/maps/README.md
+-- Up-to-date: /home/mr_robot/robot_ws/install/farmbot_nav2/share/farmbot_nav2/maps/blank.pgm
+-- Up-to-date: /home/mr_robot/robot_ws/install/farmbot_nav2/share/farmbot_nav2/maps/blank.yaml
+-- Up-to-date: /home/mr_robot/robot_ws/install/farmbot_nav2/share/farmbot_nav2/maps/default_map.yaml
+-- Up-to-date: /home/mr_robot/robot_ws/install/farmbot_nav2/share/farmbot_nav2/maps/nightnighthz.yaml
+-- Up-to-date: /home/mr_robot/robot_ws/install/farmbot_nav2/share/farmbot_nav2/maps/default_map.pgm
+-- Up-to-date: /home/mr_robot/robot_ws/install/farmbot_nav2/share/farmbot_nav2/maps/nightnighthz.pgm
+-- Up-to-date: /home/mr_robot/robot_ws/install/farmbot_nav2/share/farmbot_nav2/maps/blank.pbstream
+-- Up-to-date: /home/mr_robot/robot_ws/install/farmbot_nav2/share/farmbot_nav2/maps/nightnighthz.pbstream
+-- Up-to-date: /home/mr_robot/robot_ws/install/farmbot_nav2/share/ament_index/resource_index/package_run_dependencies/farmbot_nav2
+-- Up-to-date: /home/mr_robot/robot_ws/install/farmbot_nav2/share/ament_index/resource_index/parent_prefix_path/farmbot_nav2
+-- Up-to-date: /home/mr_robot/robot_ws/install/farmbot_nav2/share/farmbot_nav2/environment/ament_prefix_path.sh
+-- Up-to-date: /home/mr_robot/robot_ws/install/farmbot_nav2/share/farmbot_nav2/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/mr_robot/robot_ws/install/farmbot_nav2/share/farmbot_nav2/environment/path.sh
+-- Up-to-date: /home/mr_robot/robot_ws/install/farmbot_nav2/share/farmbot_nav2/environment/path.dsv
+-- Up-to-date: /home/mr_robot/robot_ws/install/farmbot_nav2/share/farmbot_nav2/local_setup.bash
+-- Up-to-date: /home/mr_robot/robot_ws/install/farmbot_nav2/share/farmbot_nav2/local_setup.sh
+-- Up-to-date: /home/mr_robot/robot_ws/install/farmbot_nav2/share/farmbot_nav2/local_setup.zsh
+-- Up-to-date: /home/mr_robot/robot_ws/install/farmbot_nav2/share/farmbot_nav2/local_setup.dsv
+-- Installing: /home/mr_robot/robot_ws/install/farmbot_nav2/share/farmbot_nav2/package.dsv
+-- Up-to-date: /home/mr_robot/robot_ws/install/farmbot_nav2/share/ament_index/resource_index/packages/farmbot_nav2
+-- Up-to-date: /home/mr_robot/robot_ws/install/farmbot_nav2/share/farmbot_nav2/cmake/farmbot_nav2Config.cmake
+-- Up-to-date: /home/mr_robot/robot_ws/install/farmbot_nav2/share/farmbot_nav2/cmake/farmbot_nav2Config-version.cmake
+-- Up-to-date: /home/mr_robot/robot_ws/install/farmbot_nav2/share/farmbot_nav2/package.xml

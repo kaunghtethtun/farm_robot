@@ -1,6 +1,0 @@
-imu0: /imu/data
-imu0_config: [false, false, false,  # Position (x, y, z)
-              true, true, true,    # Orientation (roll, pitch, yaw)
-              false, false, false,  # Linear velocity (x, y, z)
-              true, false, false,  # Linear acceleration (x, y, z)
-              true, true, true]    # Angular velocity (x, y, z)

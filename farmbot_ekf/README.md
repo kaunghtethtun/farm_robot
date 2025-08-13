@@ -1,1 +1,0 @@
-odom publish hz ကိုလက်ရှိသုံးနေတဲ့ hz နှင့် ကိုက်ညီရန် use_sim_time ကို false ပေးရမယ်။

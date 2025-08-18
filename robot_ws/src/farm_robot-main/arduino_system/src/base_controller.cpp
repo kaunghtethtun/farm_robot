@@ -29,7 +29,7 @@ public:
     imu_received_(false), have_last_imu_yaw_(false)
   {
     // Parameters
-    wheel_radius_  = this->declare_parameter<double>("wheel_radius", 0.04);   // meters
+    wheel_radius_  = this->declare_parameter<double>("wheel_radius", 0.033);   // meters
     wheel_base_    = this->declare_parameter<double>("wheel_base", 0.21);     // meters
     ticks_per_rev_ = this->declare_parameter<int>("ticks_per_rev", 1317);
     publish_rate_  = this->declare_parameter<double>("publish_rate", 20.0);   // Hz

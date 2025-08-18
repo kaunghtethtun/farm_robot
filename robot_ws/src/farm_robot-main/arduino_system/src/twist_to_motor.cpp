@@ -39,7 +39,7 @@ public:
         );
 
         joint_names_ = {"left_wheel_joint", "right_wheel_joint"};
-        wheel_diameter_ = 0.08; // meters
+        wheel_diameter_ = 0.067; // meters
 
         openSerial();
 

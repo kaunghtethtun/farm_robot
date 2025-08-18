@@ -17,11 +17,7 @@ windows:
   - YDlidar: 
       root: ~/
       panes:
-        - clear; source ~/.bashrc; ros2 launch ydlidar_ros2_driver ydlidar_launch.py
-  - EKF: 
-      root: ~/
-      panes:
-        - clear; source ~/.bashrc; cd /home/mr_robot/robot_ws/src; python3 camera.py
+        - clear; source ~/.bashrc; sleep 2; ros2 launch rplidar_ros rplidar_a2m8_launch.py
   - Carto: 
       root: ~/
       panes:

@@ -1,0 +1,925 @@
+[0.224s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--executor', 'sequential', '--parallel-workers', '4']
+[0.224s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='sequential', parallel_workers=4, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x73fdd5553c40>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x73fdd5553610>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x73fdd5553610>>, mixin_verb=('build',))
+[0.623s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.624s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.624s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.624s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.624s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.624s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.624s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/mr_robot/robot_ws'
+[0.624s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.624s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.624s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.624s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.624s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.624s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.624s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.625s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.625s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.642s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.642s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.642s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.642s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.642s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.642s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.642s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.643s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.643s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.643s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.643s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.643s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.643s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.643s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.643s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.643s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.643s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.644s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.644s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.644s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.644s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.644s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.644s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.644s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.644s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.644s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.644s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.644s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.644s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main) by extensions ['ignore', 'ignore_ament_install']
+[0.644s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main) by extension 'ignore'
+[0.644s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main) by extension 'ignore_ament_install'
+[0.645s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main) by extensions ['colcon_pkg']
+[0.645s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main) by extension 'colcon_pkg'
+[0.645s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main) by extensions ['colcon_meta']
+[0.645s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main) by extension 'colcon_meta'
+[0.645s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main) by extensions ['ros']
+[0.645s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main) by extension 'ros'
+[0.645s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main) by extensions ['cmake', 'python']
+[0.645s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main) by extension 'cmake'
+[0.645s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main) by extension 'python'
+[0.645s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main) by extensions ['python_setup_py']
+[0.645s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main) by extension 'python_setup_py'
+[0.645s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/arduino_system) by extensions ['ignore', 'ignore_ament_install']
+[0.646s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/arduino_system) by extension 'ignore'
+[0.646s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/arduino_system) by extension 'ignore_ament_install'
+[0.646s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/arduino_system) by extensions ['colcon_pkg']
+[0.646s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/arduino_system) by extension 'colcon_pkg'
+[0.646s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/arduino_system) by extensions ['colcon_meta']
+[0.646s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/arduino_system) by extension 'colcon_meta'
+[0.646s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/arduino_system) by extensions ['ros']
+[0.646s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/arduino_system) by extension 'ros'
+[0.650s] DEBUG:colcon.colcon_core.package_identification:Package 'src/farm_robot-main/arduino_system' with type 'ros.ament_cmake' and name 'arduino_system'
+[0.650s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/farmbot_carto) by extensions ['ignore', 'ignore_ament_install']
+[0.651s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/farmbot_carto) by extension 'ignore'
+[0.651s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/farmbot_carto) by extension 'ignore_ament_install'
+[0.651s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/farmbot_carto) by extensions ['colcon_pkg']
+[0.651s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/farmbot_carto) by extension 'colcon_pkg'
+[0.651s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/farmbot_carto) by extensions ['colcon_meta']
+[0.651s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/farmbot_carto) by extension 'colcon_meta'
+[0.651s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/farmbot_carto) by extensions ['ros']
+[0.651s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/farmbot_carto) by extension 'ros'
+[0.652s] DEBUG:colcon.colcon_core.package_identification:Package 'src/farm_robot-main/farmbot_carto' with type 'ros.ament_cmake' and name 'farmbot_carto'
+[0.652s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/farmbot_description) by extensions ['ignore', 'ignore_ament_install']
+[0.652s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/farmbot_description) by extension 'ignore'
+[0.652s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/farmbot_description) by extension 'ignore_ament_install'
+[0.653s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/farmbot_description) by extensions ['colcon_pkg']
+[0.653s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/farmbot_description) by extension 'colcon_pkg'
+[0.653s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/farmbot_description) by extensions ['colcon_meta']
+[0.653s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/farmbot_description) by extension 'colcon_meta'
+[0.653s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/farmbot_description) by extensions ['ros']
+[0.653s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/farmbot_description) by extension 'ros'
+[0.654s] DEBUG:colcon.colcon_core.package_identification:Package 'src/farm_robot-main/farmbot_description' with type 'ros.ament_cmake' and name 'farmbot_description'
+[0.654s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/farmbot_ekf) by extensions ['ignore', 'ignore_ament_install']
+[0.654s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/farmbot_ekf) by extension 'ignore'
+[0.654s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/farmbot_ekf) by extension 'ignore_ament_install'
+[0.654s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/farmbot_ekf) by extensions ['colcon_pkg']
+[0.654s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/farmbot_ekf) by extension 'colcon_pkg'
+[0.654s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/farmbot_ekf) by extensions ['colcon_meta']
+[0.654s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/farmbot_ekf) by extension 'colcon_meta'
+[0.654s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/farmbot_ekf) by extensions ['ros']
+[0.655s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/farmbot_ekf) by extension 'ros'
+[0.657s] DEBUG:colcon.colcon_core.package_identification:Package 'src/farm_robot-main/farmbot_ekf' with type 'ros.ament_cmake' and name 'farmbot_ekf'
+[0.657s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/farmbot_nav2) by extensions ['ignore', 'ignore_ament_install']
+[0.657s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/farmbot_nav2) by extension 'ignore'
+[0.657s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/farmbot_nav2) by extension 'ignore_ament_install'
+[0.657s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/farmbot_nav2) by extensions ['colcon_pkg']
+[0.657s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/farmbot_nav2) by extension 'colcon_pkg'
+[0.657s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/farmbot_nav2) by extensions ['colcon_meta']
+[0.658s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/farmbot_nav2) by extension 'colcon_meta'
+[0.658s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/farmbot_nav2) by extensions ['ros']
+[0.658s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/farmbot_nav2) by extension 'ros'
+[0.659s] DEBUG:colcon.colcon_core.package_identification:Package 'src/farm_robot-main/farmbot_nav2' with type 'ros.ament_cmake' and name 'farmbot_nav2'
+[0.659s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/mytmux) by extensions ['ignore', 'ignore_ament_install']
+[0.659s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/mytmux) by extension 'ignore'
+[0.660s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/mytmux) by extension 'ignore_ament_install'
+[0.660s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/mytmux) by extensions ['colcon_pkg']
+[0.660s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/mytmux) by extension 'colcon_pkg'
+[0.660s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/mytmux) by extensions ['colcon_meta']
+[0.660s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/mytmux) by extension 'colcon_meta'
+[0.660s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/mytmux) by extensions ['ros']
+[0.660s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/mytmux) by extension 'ros'
+[0.660s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/mytmux) by extensions ['cmake', 'python']
+[0.660s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/mytmux) by extension 'cmake'
+[0.660s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/mytmux) by extension 'python'
+[0.660s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/mytmux) by extensions ['python_setup_py']
+[0.660s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/mytmux) by extension 'python_setup_py'
+[0.661s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros2_megaboard) by extensions ['ignore', 'ignore_ament_install']
+[0.661s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros2_megaboard) by extension 'ignore'
+[0.661s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros2_megaboard) by extension 'ignore_ament_install'
+[0.661s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros2_megaboard) by extensions ['colcon_pkg']
+[0.661s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros2_megaboard) by extension 'colcon_pkg'
+[0.661s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros2_megaboard) by extensions ['colcon_meta']
+[0.661s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros2_megaboard) by extension 'colcon_meta'
+[0.661s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros2_megaboard) by extensions ['ros']
+[0.661s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros2_megaboard) by extension 'ros'
+[0.661s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros2_megaboard) by extensions ['cmake', 'python']
+[0.661s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros2_megaboard) by extension 'cmake'
+[0.661s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros2_megaboard) by extension 'python'
+[0.661s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros2_megaboard) by extensions ['python_setup_py']
+[0.661s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros2_megaboard) by extension 'python_setup_py'
+[0.662s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web) by extensions ['ignore', 'ignore_ament_install']
+[0.662s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web) by extension 'ignore'
+[0.662s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web) by extension 'ignore_ament_install'
+[0.662s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web) by extensions ['colcon_pkg']
+[0.662s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web) by extension 'colcon_pkg'
+[0.662s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web) by extensions ['colcon_meta']
+[0.662s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web) by extension 'colcon_meta'
+[0.662s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web) by extensions ['ros']
+[0.662s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web) by extension 'ros'
+[0.662s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web) by extensions ['cmake', 'python']
+[0.662s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web) by extension 'cmake'
+[0.662s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web) by extension 'python'
+[0.662s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web) by extensions ['python_setup_py']
+[0.662s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web) by extension 'python_setup_py'
+[0.663s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets) by extensions ['ignore', 'ignore_ament_install']
+[0.663s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets) by extension 'ignore'
+[0.663s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets) by extension 'ignore_ament_install'
+[0.663s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets) by extensions ['colcon_pkg']
+[0.663s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets) by extension 'colcon_pkg'
+[0.663s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets) by extensions ['colcon_meta']
+[0.663s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets) by extension 'colcon_meta'
+[0.663s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets) by extensions ['ros']
+[0.663s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets) by extension 'ros'
+[0.664s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets) by extensions ['cmake', 'python']
+[0.664s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets) by extension 'cmake'
+[0.664s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets) by extension 'python'
+[0.664s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets) by extensions ['python_setup_py']
+[0.664s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets) by extension 'python_setup_py'
+[0.664s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/assets) by extensions ['ignore', 'ignore_ament_install']
+[0.664s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/assets) by extension 'ignore'
+[0.664s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/assets) by extension 'ignore_ament_install'
+[0.664s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/assets) by extensions ['colcon_pkg']
+[0.664s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/assets) by extension 'colcon_pkg'
+[0.664s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/assets) by extensions ['colcon_meta']
+[0.664s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/assets) by extension 'colcon_meta'
+[0.665s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/assets) by extensions ['ros']
+[0.665s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/assets) by extension 'ros'
+[0.665s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/assets) by extensions ['cmake', 'python']
+[0.665s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/assets) by extension 'cmake'
+[0.665s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/assets) by extension 'python'
+[0.665s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/assets) by extensions ['python_setup_py']
+[0.665s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/assets) by extension 'python_setup_py'
+[0.665s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/assets/icons) by extensions ['ignore', 'ignore_ament_install']
+[0.665s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/assets/icons) by extension 'ignore'
+[0.665s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/assets/icons) by extension 'ignore_ament_install'
+[0.665s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/assets/icons) by extensions ['colcon_pkg']
+[0.665s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/assets/icons) by extension 'colcon_pkg'
+[0.666s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/assets/icons) by extensions ['colcon_meta']
+[0.666s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/assets/icons) by extension 'colcon_meta'
+[0.666s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/assets/icons) by extensions ['ros']
+[0.666s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/assets/icons) by extension 'ros'
+[0.666s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/assets/icons) by extensions ['cmake', 'python']
+[0.666s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/assets/icons) by extension 'cmake'
+[0.666s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/assets/icons) by extension 'python'
+[0.666s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/assets/icons) by extensions ['python_setup_py']
+[0.666s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/assets/icons) by extension 'python_setup_py'
+[0.666s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/assets/icons/battery) by extensions ['ignore', 'ignore_ament_install']
+[0.666s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/assets/icons/battery) by extension 'ignore'
+[0.667s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/assets/icons/battery) by extension 'ignore_ament_install'
+[0.667s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/assets/icons/battery) by extensions ['colcon_pkg']
+[0.667s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/assets/icons/battery) by extension 'colcon_pkg'
+[0.667s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/assets/icons/battery) by extensions ['colcon_meta']
+[0.667s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/assets/icons/battery) by extension 'colcon_meta'
+[0.667s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/assets/icons/battery) by extensions ['ros']
+[0.667s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/assets/icons/battery) by extension 'ros'
+[0.667s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/assets/icons/battery) by extensions ['cmake', 'python']
+[0.667s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/assets/icons/battery) by extension 'cmake'
+[0.667s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/assets/icons/battery) by extension 'python'
+[0.667s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/assets/icons/battery) by extensions ['python_setup_py']
+[0.667s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/assets/icons/battery) by extension 'python_setup_py'
+[0.668s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/assets/icons/gamepad) by extensions ['ignore', 'ignore_ament_install']
+[0.668s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/assets/icons/gamepad) by extension 'ignore'
+[0.668s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/assets/icons/gamepad) by extension 'ignore_ament_install'
+[0.668s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/assets/icons/gamepad) by extensions ['colcon_pkg']
+[0.668s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/assets/icons/gamepad) by extension 'colcon_pkg'
+[0.668s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/assets/icons/gamepad) by extensions ['colcon_meta']
+[0.668s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/assets/icons/gamepad) by extension 'colcon_meta'
+[0.668s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/assets/icons/gamepad) by extensions ['ros']
+[0.668s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/assets/icons/gamepad) by extension 'ros'
+[0.668s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/assets/icons/gamepad) by extensions ['cmake', 'python']
+[0.668s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/assets/icons/gamepad) by extension 'cmake'
+[0.668s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/assets/icons/gamepad) by extension 'python'
+[0.668s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/assets/icons/gamepad) by extensions ['python_setup_py']
+[0.668s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/assets/icons/gamepad) by extension 'python_setup_py'
+[0.669s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/assets/icons/nav_point) by extensions ['ignore', 'ignore_ament_install']
+[0.669s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/assets/icons/nav_point) by extension 'ignore'
+[0.669s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/assets/icons/nav_point) by extension 'ignore_ament_install'
+[0.669s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/assets/icons/nav_point) by extensions ['colcon_pkg']
+[0.669s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/assets/icons/nav_point) by extension 'colcon_pkg'
+[0.669s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/assets/icons/nav_point) by extensions ['colcon_meta']
+[0.669s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/assets/icons/nav_point) by extension 'colcon_meta'
+[0.669s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/assets/icons/nav_point) by extensions ['ros']
+[0.669s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/assets/icons/nav_point) by extension 'ros'
+[0.669s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/assets/icons/nav_point) by extensions ['cmake', 'python']
+[0.670s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/assets/icons/nav_point) by extension 'cmake'
+[0.670s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/assets/icons/nav_point) by extension 'python'
+[0.670s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/assets/icons/nav_point) by extensions ['python_setup_py']
+[0.670s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/assets/icons/nav_point) by extension 'python_setup_py'
+[0.670s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/assets/icons/reloc) by extensions ['ignore', 'ignore_ament_install']
+[0.670s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/assets/icons/reloc) by extension 'ignore'
+[0.670s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/assets/icons/reloc) by extension 'ignore_ament_install'
+[0.670s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/assets/icons/reloc) by extensions ['colcon_pkg']
+[0.670s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/assets/icons/reloc) by extension 'colcon_pkg'
+[0.670s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/assets/icons/reloc) by extensions ['colcon_meta']
+[0.670s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/assets/icons/reloc) by extension 'colcon_meta'
+[0.670s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/assets/icons/reloc) by extensions ['ros']
+[0.670s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/assets/icons/reloc) by extension 'ros'
+[0.671s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/assets/icons/reloc) by extensions ['cmake', 'python']
+[0.671s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/assets/icons/reloc) by extension 'cmake'
+[0.671s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/assets/icons/reloc) by extension 'python'
+[0.671s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/assets/icons/reloc) by extensions ['python_setup_py']
+[0.671s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/assets/icons/reloc) by extension 'python_setup_py'
+[0.671s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/assets/icons/speed) by extensions ['ignore', 'ignore_ament_install']
+[0.671s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/assets/icons/speed) by extension 'ignore'
+[0.671s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/assets/icons/speed) by extension 'ignore_ament_install'
+[0.671s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/assets/icons/speed) by extensions ['colcon_pkg']
+[0.671s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/assets/icons/speed) by extension 'colcon_pkg'
+[0.671s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/assets/icons/speed) by extensions ['colcon_meta']
+[0.671s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/assets/icons/speed) by extension 'colcon_meta'
+[0.671s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/assets/icons/speed) by extensions ['ros']
+[0.672s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/assets/icons/speed) by extension 'ros'
+[0.672s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/assets/icons/speed) by extensions ['cmake', 'python']
+[0.672s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/assets/icons/speed) by extension 'cmake'
+[0.672s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/assets/icons/speed) by extension 'python'
+[0.672s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/assets/icons/speed) by extensions ['python_setup_py']
+[0.672s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/assets/icons/speed) by extension 'python_setup_py'
+[0.672s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/fonts) by extensions ['ignore', 'ignore_ament_install']
+[0.672s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/fonts) by extension 'ignore'
+[0.672s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/fonts) by extension 'ignore_ament_install'
+[0.672s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/fonts) by extensions ['colcon_pkg']
+[0.672s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/fonts) by extension 'colcon_pkg'
+[0.672s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/fonts) by extensions ['colcon_meta']
+[0.672s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/fonts) by extension 'colcon_meta'
+[0.673s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/fonts) by extensions ['ros']
+[0.673s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/fonts) by extension 'ros'
+[0.673s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/fonts) by extensions ['cmake', 'python']
+[0.673s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/fonts) by extension 'cmake'
+[0.673s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/fonts) by extension 'python'
+[0.673s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/fonts) by extensions ['python_setup_py']
+[0.673s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/fonts) by extension 'python_setup_py'
+[0.673s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/packages) by extensions ['ignore', 'ignore_ament_install']
+[0.673s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/packages) by extension 'ignore'
+[0.673s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/packages) by extension 'ignore_ament_install'
+[0.673s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/packages) by extensions ['colcon_pkg']
+[0.673s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/packages) by extension 'colcon_pkg'
+[0.673s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/packages) by extensions ['colcon_meta']
+[0.674s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/packages) by extension 'colcon_meta'
+[0.674s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/packages) by extensions ['ros']
+[0.674s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/packages) by extension 'ros'
+[0.674s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/packages) by extensions ['cmake', 'python']
+[0.674s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/packages) by extension 'cmake'
+[0.674s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/packages) by extension 'python'
+[0.674s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/packages) by extensions ['python_setup_py']
+[0.674s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/packages) by extension 'python_setup_py'
+[0.674s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/packages/cupertino_icons) by extensions ['ignore', 'ignore_ament_install']
+[0.674s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/packages/cupertino_icons) by extension 'ignore'
+[0.674s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/packages/cupertino_icons) by extension 'ignore_ament_install'
+[0.675s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/packages/cupertino_icons) by extensions ['colcon_pkg']
+[0.675s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/packages/cupertino_icons) by extension 'colcon_pkg'
+[0.675s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/packages/cupertino_icons) by extensions ['colcon_meta']
+[0.675s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/packages/cupertino_icons) by extension 'colcon_meta'
+[0.675s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/packages/cupertino_icons) by extensions ['ros']
+[0.675s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/packages/cupertino_icons) by extension 'ros'
+[0.675s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/packages/cupertino_icons) by extensions ['cmake', 'python']
+[0.675s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/packages/cupertino_icons) by extension 'cmake'
+[0.675s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/packages/cupertino_icons) by extension 'python'
+[0.675s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/packages/cupertino_icons) by extensions ['python_setup_py']
+[0.675s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/packages/cupertino_icons) by extension 'python_setup_py'
+[0.675s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/packages/cupertino_icons/assets) by extensions ['ignore', 'ignore_ament_install']
+[0.675s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/packages/cupertino_icons/assets) by extension 'ignore'
+[0.676s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/packages/cupertino_icons/assets) by extension 'ignore_ament_install'
+[0.676s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/packages/cupertino_icons/assets) by extensions ['colcon_pkg']
+[0.676s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/packages/cupertino_icons/assets) by extension 'colcon_pkg'
+[0.676s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/packages/cupertino_icons/assets) by extensions ['colcon_meta']
+[0.676s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/packages/cupertino_icons/assets) by extension 'colcon_meta'
+[0.676s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/packages/cupertino_icons/assets) by extensions ['ros']
+[0.676s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/packages/cupertino_icons/assets) by extension 'ros'
+[0.676s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/packages/cupertino_icons/assets) by extensions ['cmake', 'python']
+[0.676s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/packages/cupertino_icons/assets) by extension 'cmake'
+[0.676s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/packages/cupertino_icons/assets) by extension 'python'
+[0.676s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/packages/cupertino_icons/assets) by extensions ['python_setup_py']
+[0.676s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/packages/cupertino_icons/assets) by extension 'python_setup_py'
+[0.676s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/packages/fluttertoast) by extensions ['ignore', 'ignore_ament_install']
+[0.677s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/packages/fluttertoast) by extension 'ignore'
+[0.677s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/packages/fluttertoast) by extension 'ignore_ament_install'
+[0.677s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/packages/fluttertoast) by extensions ['colcon_pkg']
+[0.677s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/packages/fluttertoast) by extension 'colcon_pkg'
+[0.677s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/packages/fluttertoast) by extensions ['colcon_meta']
+[0.677s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/packages/fluttertoast) by extension 'colcon_meta'
+[0.677s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/packages/fluttertoast) by extensions ['ros']
+[0.677s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/packages/fluttertoast) by extension 'ros'
+[0.677s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/packages/fluttertoast) by extensions ['cmake', 'python']
+[0.677s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/packages/fluttertoast) by extension 'cmake'
+[0.677s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/packages/fluttertoast) by extension 'python'
+[0.677s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/packages/fluttertoast) by extensions ['python_setup_py']
+[0.677s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/packages/fluttertoast) by extension 'python_setup_py'
+[0.678s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/packages/fluttertoast/assets) by extensions ['ignore', 'ignore_ament_install']
+[0.678s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/packages/fluttertoast/assets) by extension 'ignore'
+[0.678s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/packages/fluttertoast/assets) by extension 'ignore_ament_install'
+[0.678s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/packages/fluttertoast/assets) by extensions ['colcon_pkg']
+[0.678s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/packages/fluttertoast/assets) by extension 'colcon_pkg'
+[0.678s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/packages/fluttertoast/assets) by extensions ['colcon_meta']
+[0.678s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/packages/fluttertoast/assets) by extension 'colcon_meta'
+[0.678s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/packages/fluttertoast/assets) by extensions ['ros']
+[0.678s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/packages/fluttertoast/assets) by extension 'ros'
+[0.678s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/packages/fluttertoast/assets) by extensions ['cmake', 'python']
+[0.678s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/packages/fluttertoast/assets) by extension 'cmake'
+[0.678s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/packages/fluttertoast/assets) by extension 'python'
+[0.678s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/packages/fluttertoast/assets) by extensions ['python_setup_py']
+[0.678s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/packages/fluttertoast/assets) by extension 'python_setup_py'
+[0.679s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/packages/toast) by extensions ['ignore', 'ignore_ament_install']
+[0.679s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/packages/toast) by extension 'ignore'
+[0.679s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/packages/toast) by extension 'ignore_ament_install'
+[0.679s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/packages/toast) by extensions ['colcon_pkg']
+[0.679s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/packages/toast) by extension 'colcon_pkg'
+[0.679s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/packages/toast) by extensions ['colcon_meta']
+[0.679s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/packages/toast) by extension 'colcon_meta'
+[0.679s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/packages/toast) by extensions ['ros']
+[0.679s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/packages/toast) by extension 'ros'
+[0.679s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/packages/toast) by extensions ['cmake', 'python']
+[0.679s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/packages/toast) by extension 'cmake'
+[0.679s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/packages/toast) by extension 'python'
+[0.679s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/packages/toast) by extensions ['python_setup_py']
+[0.679s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/packages/toast) by extension 'python_setup_py'
+[0.680s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/packages/toast/assets) by extensions ['ignore', 'ignore_ament_install']
+[0.680s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/packages/toast/assets) by extension 'ignore'
+[0.680s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/packages/toast/assets) by extension 'ignore_ament_install'
+[0.680s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/packages/toast/assets) by extensions ['colcon_pkg']
+[0.680s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/packages/toast/assets) by extension 'colcon_pkg'
+[0.680s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/packages/toast/assets) by extensions ['colcon_meta']
+[0.680s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/packages/toast/assets) by extension 'colcon_meta'
+[0.680s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/packages/toast/assets) by extensions ['ros']
+[0.680s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/packages/toast/assets) by extension 'ros'
+[0.680s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/packages/toast/assets) by extensions ['cmake', 'python']
+[0.680s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/packages/toast/assets) by extension 'cmake'
+[0.680s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/packages/toast/assets) by extension 'python'
+[0.681s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/packages/toast/assets) by extensions ['python_setup_py']
+[0.681s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/packages/toast/assets) by extension 'python_setup_py'
+[0.681s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/packages/wakelock_plus) by extensions ['ignore', 'ignore_ament_install']
+[0.681s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/packages/wakelock_plus) by extension 'ignore'
+[0.681s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/packages/wakelock_plus) by extension 'ignore_ament_install'
+[0.681s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/packages/wakelock_plus) by extensions ['colcon_pkg']
+[0.681s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/packages/wakelock_plus) by extension 'colcon_pkg'
+[0.681s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/packages/wakelock_plus) by extensions ['colcon_meta']
+[0.681s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/packages/wakelock_plus) by extension 'colcon_meta'
+[0.681s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/packages/wakelock_plus) by extensions ['ros']
+[0.681s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/packages/wakelock_plus) by extension 'ros'
+[0.682s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/packages/wakelock_plus) by extensions ['cmake', 'python']
+[0.682s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/packages/wakelock_plus) by extension 'cmake'
+[0.682s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/packages/wakelock_plus) by extension 'python'
+[0.682s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/packages/wakelock_plus) by extensions ['python_setup_py']
+[0.682s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/packages/wakelock_plus) by extension 'python_setup_py'
+[0.682s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/packages/wakelock_plus/assets) by extensions ['ignore', 'ignore_ament_install']
+[0.682s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/packages/wakelock_plus/assets) by extension 'ignore'
+[0.682s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/packages/wakelock_plus/assets) by extension 'ignore_ament_install'
+[0.682s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/packages/wakelock_plus/assets) by extensions ['colcon_pkg']
+[0.682s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/packages/wakelock_plus/assets) by extension 'colcon_pkg'
+[0.682s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/packages/wakelock_plus/assets) by extensions ['colcon_meta']
+[0.682s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/packages/wakelock_plus/assets) by extension 'colcon_meta'
+[0.683s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/packages/wakelock_plus/assets) by extensions ['ros']
+[0.683s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/packages/wakelock_plus/assets) by extension 'ros'
+[0.683s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/packages/wakelock_plus/assets) by extensions ['cmake', 'python']
+[0.683s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/packages/wakelock_plus/assets) by extension 'cmake'
+[0.683s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/packages/wakelock_plus/assets) by extension 'python'
+[0.683s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/packages/wakelock_plus/assets) by extensions ['python_setup_py']
+[0.683s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/packages/wakelock_plus/assets) by extension 'python_setup_py'
+[0.683s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/shaders) by extensions ['ignore', 'ignore_ament_install']
+[0.683s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/shaders) by extension 'ignore'
+[0.683s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/shaders) by extension 'ignore_ament_install'
+[0.684s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/shaders) by extensions ['colcon_pkg']
+[0.684s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/shaders) by extension 'colcon_pkg'
+[0.684s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/shaders) by extensions ['colcon_meta']
+[0.684s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/shaders) by extension 'colcon_meta'
+[0.684s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/shaders) by extensions ['ros']
+[0.684s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/shaders) by extension 'ros'
+[0.684s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/shaders) by extensions ['cmake', 'python']
+[0.684s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/shaders) by extension 'cmake'
+[0.684s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/shaders) by extension 'python'
+[0.684s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/shaders) by extensions ['python_setup_py']
+[0.684s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/assets/shaders) by extension 'python_setup_py'
+[0.684s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/canvaskit) by extensions ['ignore', 'ignore_ament_install']
+[0.685s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/canvaskit) by extension 'ignore'
+[0.685s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/canvaskit) by extension 'ignore_ament_install'
+[0.685s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/canvaskit) by extensions ['colcon_pkg']
+[0.685s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/canvaskit) by extension 'colcon_pkg'
+[0.685s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/canvaskit) by extensions ['colcon_meta']
+[0.685s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/canvaskit) by extension 'colcon_meta'
+[0.685s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/canvaskit) by extensions ['ros']
+[0.685s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/canvaskit) by extension 'ros'
+[0.685s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/canvaskit) by extensions ['cmake', 'python']
+[0.685s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/canvaskit) by extension 'cmake'
+[0.685s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/canvaskit) by extension 'python'
+[0.685s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/canvaskit) by extensions ['python_setup_py']
+[0.685s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/canvaskit) by extension 'python_setup_py'
+[0.686s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/canvaskit/chromium) by extensions ['ignore', 'ignore_ament_install']
+[0.686s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/canvaskit/chromium) by extension 'ignore'
+[0.686s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/canvaskit/chromium) by extension 'ignore_ament_install'
+[0.686s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/canvaskit/chromium) by extensions ['colcon_pkg']
+[0.686s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/canvaskit/chromium) by extension 'colcon_pkg'
+[0.686s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/canvaskit/chromium) by extensions ['colcon_meta']
+[0.686s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/canvaskit/chromium) by extension 'colcon_meta'
+[0.686s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/canvaskit/chromium) by extensions ['ros']
+[0.686s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/canvaskit/chromium) by extension 'ros'
+[0.686s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/canvaskit/chromium) by extensions ['cmake', 'python']
+[0.686s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/canvaskit/chromium) by extension 'cmake'
+[0.686s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/canvaskit/chromium) by extension 'python'
+[0.686s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/canvaskit/chromium) by extensions ['python_setup_py']
+[0.686s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/canvaskit/chromium) by extension 'python_setup_py'
+[0.687s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/icons) by extensions ['ignore', 'ignore_ament_install']
+[0.687s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/icons) by extension 'ignore'
+[0.687s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/icons) by extension 'ignore_ament_install'
+[0.687s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/icons) by extensions ['colcon_pkg']
+[0.687s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/icons) by extension 'colcon_pkg'
+[0.687s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/icons) by extensions ['colcon_meta']
+[0.687s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/icons) by extension 'colcon_meta'
+[0.687s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/icons) by extensions ['ros']
+[0.687s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/icons) by extension 'ros'
+[0.688s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/icons) by extensions ['cmake', 'python']
+[0.688s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/icons) by extension 'cmake'
+[0.688s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/icons) by extension 'python'
+[0.688s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/icons) by extensions ['python_setup_py']
+[0.688s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ros_flutter_gui_app_web/icons) by extension 'python_setup_py'
+[0.688s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/wit_motion_imu_publisher) by extensions ['ignore', 'ignore_ament_install']
+[0.688s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/wit_motion_imu_publisher) by extension 'ignore'
+[0.688s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/wit_motion_imu_publisher) by extension 'ignore_ament_install'
+[0.688s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/wit_motion_imu_publisher) by extensions ['colcon_pkg']
+[0.689s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/wit_motion_imu_publisher) by extension 'colcon_pkg'
+[0.689s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/wit_motion_imu_publisher) by extensions ['colcon_meta']
+[0.689s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/wit_motion_imu_publisher) by extension 'colcon_meta'
+[0.689s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/wit_motion_imu_publisher) by extensions ['ros']
+[0.689s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/wit_motion_imu_publisher) by extension 'ros'
+[0.690s] DEBUG:colcon.colcon_core.package_identification:Package 'src/farm_robot-main/wit_motion_imu_publisher' with type 'ros.ament_cmake' and name 'wit_motion_imu_publisher'
+[0.690s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ydlidar_ros2_driver-humble) by extensions ['ignore', 'ignore_ament_install']
+[0.690s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ydlidar_ros2_driver-humble) by extension 'ignore'
+[0.690s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ydlidar_ros2_driver-humble) by extension 'ignore_ament_install'
+[0.691s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ydlidar_ros2_driver-humble) by extensions ['colcon_pkg']
+[0.691s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ydlidar_ros2_driver-humble) by extension 'colcon_pkg'
+[0.691s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ydlidar_ros2_driver-humble) by extensions ['colcon_meta']
+[0.691s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ydlidar_ros2_driver-humble) by extension 'colcon_meta'
+[0.691s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ydlidar_ros2_driver-humble) by extensions ['ros']
+[0.691s] Level 1:colcon.colcon_core.package_identification:_identify(src/farm_robot-main/ydlidar_ros2_driver-humble) by extension 'ros'
+[0.692s] DEBUG:colcon.colcon_core.package_identification:Package 'src/farm_robot-main/ydlidar_ros2_driver-humble' with type 'ros.ament_cmake' and name 'ydlidar_ros2_driver'
+[0.692s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.692s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.692s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.692s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.692s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.736s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.736s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.739s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/mr_robot/robot_ws/install/ydlidar_ros2_driver' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.739s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/mr_robot/robot_ws/install/wit_motion_imu_publisher' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.739s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/mr_robot/robot_ws/install/farmbot_nav2' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.739s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/mr_robot/robot_ws/install/farmbot_ekf' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.740s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/mr_robot/robot_ws/install/farmbot_description' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.740s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/mr_robot/robot_ws/install/farmbot_carto' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.740s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/mr_robot/robot_ws/install/arduino_system' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.741s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/mr_robot/robot_ws/install/ydlidar_ros2_driver' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.741s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/mr_robot/robot_ws/install/wit_motion_imu_publisher' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.741s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/mr_robot/robot_ws/install/farmbot_nav2' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.741s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/mr_robot/robot_ws/install/farmbot_ekf' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.741s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/mr_robot/robot_ws/install/farmbot_description' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.741s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/mr_robot/robot_ws/install/farmbot_carto' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.741s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/mr_robot/robot_ws/install/arduino_system' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.743s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 0 installed packages in /home/mr_robot/robot_ws/install
+[0.744s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 10 installed packages in /home/mr_robot/maintain_ws/install
+[0.745s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 13 installed packages in /home/mr_robot/devel_ws/install
+[0.747s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 415 installed packages in /opt/ros/humble
+[0.750s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.836s] Level 5:colcon.colcon_core.verb:set package 'arduino_system' build argument 'cmake_args' from command line to 'None'
+[0.836s] Level 5:colcon.colcon_core.verb:set package 'arduino_system' build argument 'cmake_target' from command line to 'None'
+[0.836s] Level 5:colcon.colcon_core.verb:set package 'arduino_system' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.836s] Level 5:colcon.colcon_core.verb:set package 'arduino_system' build argument 'cmake_clean_cache' from command line to 'False'
+[0.836s] Level 5:colcon.colcon_core.verb:set package 'arduino_system' build argument 'cmake_clean_first' from command line to 'False'
+[0.836s] Level 5:colcon.colcon_core.verb:set package 'arduino_system' build argument 'cmake_force_configure' from command line to 'False'
+[0.836s] Level 5:colcon.colcon_core.verb:set package 'arduino_system' build argument 'ament_cmake_args' from command line to 'None'
+[0.836s] Level 5:colcon.colcon_core.verb:set package 'arduino_system' build argument 'catkin_cmake_args' from command line to 'None'
+[0.836s] Level 5:colcon.colcon_core.verb:set package 'arduino_system' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.836s] DEBUG:colcon.colcon_core.verb:Building package 'arduino_system' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/mr_robot/robot_ws/build/arduino_system', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/mr_robot/robot_ws/install/arduino_system', 'merge_install': False, 'path': '/home/mr_robot/robot_ws/src/farm_robot-main/arduino_system', 'symlink_install': False, 'test_result_base': None}
+[0.837s] Level 5:colcon.colcon_core.verb:set package 'farmbot_carto' build argument 'cmake_args' from command line to 'None'
+[0.837s] Level 5:colcon.colcon_core.verb:set package 'farmbot_carto' build argument 'cmake_target' from command line to 'None'
+[0.837s] Level 5:colcon.colcon_core.verb:set package 'farmbot_carto' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.837s] Level 5:colcon.colcon_core.verb:set package 'farmbot_carto' build argument 'cmake_clean_cache' from command line to 'False'
+[0.837s] Level 5:colcon.colcon_core.verb:set package 'farmbot_carto' build argument 'cmake_clean_first' from command line to 'False'
+[0.837s] Level 5:colcon.colcon_core.verb:set package 'farmbot_carto' build argument 'cmake_force_configure' from command line to 'False'
+[0.837s] Level 5:colcon.colcon_core.verb:set package 'farmbot_carto' build argument 'ament_cmake_args' from command line to 'None'
+[0.837s] Level 5:colcon.colcon_core.verb:set package 'farmbot_carto' build argument 'catkin_cmake_args' from command line to 'None'
+[0.837s] Level 5:colcon.colcon_core.verb:set package 'farmbot_carto' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.837s] DEBUG:colcon.colcon_core.verb:Building package 'farmbot_carto' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/mr_robot/robot_ws/build/farmbot_carto', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/mr_robot/robot_ws/install/farmbot_carto', 'merge_install': False, 'path': '/home/mr_robot/robot_ws/src/farm_robot-main/farmbot_carto', 'symlink_install': False, 'test_result_base': None}
+[0.837s] Level 5:colcon.colcon_core.verb:set package 'farmbot_description' build argument 'cmake_args' from command line to 'None'
+[0.837s] Level 5:colcon.colcon_core.verb:set package 'farmbot_description' build argument 'cmake_target' from command line to 'None'
+[0.837s] Level 5:colcon.colcon_core.verb:set package 'farmbot_description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.837s] Level 5:colcon.colcon_core.verb:set package 'farmbot_description' build argument 'cmake_clean_cache' from command line to 'False'
+[0.837s] Level 5:colcon.colcon_core.verb:set package 'farmbot_description' build argument 'cmake_clean_first' from command line to 'False'
+[0.838s] Level 5:colcon.colcon_core.verb:set package 'farmbot_description' build argument 'cmake_force_configure' from command line to 'False'
+[0.838s] Level 5:colcon.colcon_core.verb:set package 'farmbot_description' build argument 'ament_cmake_args' from command line to 'None'
+[0.838s] Level 5:colcon.colcon_core.verb:set package 'farmbot_description' build argument 'catkin_cmake_args' from command line to 'None'
+[0.838s] Level 5:colcon.colcon_core.verb:set package 'farmbot_description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.838s] DEBUG:colcon.colcon_core.verb:Building package 'farmbot_description' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/mr_robot/robot_ws/build/farmbot_description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/mr_robot/robot_ws/install/farmbot_description', 'merge_install': False, 'path': '/home/mr_robot/robot_ws/src/farm_robot-main/farmbot_description', 'symlink_install': False, 'test_result_base': None}
+[0.838s] Level 5:colcon.colcon_core.verb:set package 'farmbot_ekf' build argument 'cmake_args' from command line to 'None'
+[0.838s] Level 5:colcon.colcon_core.verb:set package 'farmbot_ekf' build argument 'cmake_target' from command line to 'None'
+[0.838s] Level 5:colcon.colcon_core.verb:set package 'farmbot_ekf' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.838s] Level 5:colcon.colcon_core.verb:set package 'farmbot_ekf' build argument 'cmake_clean_cache' from command line to 'False'
+[0.838s] Level 5:colcon.colcon_core.verb:set package 'farmbot_ekf' build argument 'cmake_clean_first' from command line to 'False'
+[0.838s] Level 5:colcon.colcon_core.verb:set package 'farmbot_ekf' build argument 'cmake_force_configure' from command line to 'False'
+[0.839s] Level 5:colcon.colcon_core.verb:set package 'farmbot_ekf' build argument 'ament_cmake_args' from command line to 'None'
+[0.839s] Level 5:colcon.colcon_core.verb:set package 'farmbot_ekf' build argument 'catkin_cmake_args' from command line to 'None'
+[0.839s] Level 5:colcon.colcon_core.verb:set package 'farmbot_ekf' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.839s] DEBUG:colcon.colcon_core.verb:Building package 'farmbot_ekf' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/mr_robot/robot_ws/build/farmbot_ekf', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/mr_robot/robot_ws/install/farmbot_ekf', 'merge_install': False, 'path': '/home/mr_robot/robot_ws/src/farm_robot-main/farmbot_ekf', 'symlink_install': False, 'test_result_base': None}
+[0.839s] Level 5:colcon.colcon_core.verb:set package 'farmbot_nav2' build argument 'cmake_args' from command line to 'None'
+[0.839s] Level 5:colcon.colcon_core.verb:set package 'farmbot_nav2' build argument 'cmake_target' from command line to 'None'
+[0.839s] Level 5:colcon.colcon_core.verb:set package 'farmbot_nav2' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.839s] Level 5:colcon.colcon_core.verb:set package 'farmbot_nav2' build argument 'cmake_clean_cache' from command line to 'False'
+[0.839s] Level 5:colcon.colcon_core.verb:set package 'farmbot_nav2' build argument 'cmake_clean_first' from command line to 'False'
+[0.839s] Level 5:colcon.colcon_core.verb:set package 'farmbot_nav2' build argument 'cmake_force_configure' from command line to 'False'
+[0.839s] Level 5:colcon.colcon_core.verb:set package 'farmbot_nav2' build argument 'ament_cmake_args' from command line to 'None'
+[0.839s] Level 5:colcon.colcon_core.verb:set package 'farmbot_nav2' build argument 'catkin_cmake_args' from command line to 'None'
+[0.839s] Level 5:colcon.colcon_core.verb:set package 'farmbot_nav2' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.839s] DEBUG:colcon.colcon_core.verb:Building package 'farmbot_nav2' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/mr_robot/robot_ws/build/farmbot_nav2', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/mr_robot/robot_ws/install/farmbot_nav2', 'merge_install': False, 'path': '/home/mr_robot/robot_ws/src/farm_robot-main/farmbot_nav2', 'symlink_install': False, 'test_result_base': None}
+[0.840s] Level 5:colcon.colcon_core.verb:set package 'wit_motion_imu_publisher' build argument 'cmake_args' from command line to 'None'
+[0.840s] Level 5:colcon.colcon_core.verb:set package 'wit_motion_imu_publisher' build argument 'cmake_target' from command line to 'None'
+[0.840s] Level 5:colcon.colcon_core.verb:set package 'wit_motion_imu_publisher' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.840s] Level 5:colcon.colcon_core.verb:set package 'wit_motion_imu_publisher' build argument 'cmake_clean_cache' from command line to 'False'
+[0.840s] Level 5:colcon.colcon_core.verb:set package 'wit_motion_imu_publisher' build argument 'cmake_clean_first' from command line to 'False'
+[0.840s] Level 5:colcon.colcon_core.verb:set package 'wit_motion_imu_publisher' build argument 'cmake_force_configure' from command line to 'False'
+[0.840s] Level 5:colcon.colcon_core.verb:set package 'wit_motion_imu_publisher' build argument 'ament_cmake_args' from command line to 'None'
+[0.840s] Level 5:colcon.colcon_core.verb:set package 'wit_motion_imu_publisher' build argument 'catkin_cmake_args' from command line to 'None'
+[0.840s] Level 5:colcon.colcon_core.verb:set package 'wit_motion_imu_publisher' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.840s] DEBUG:colcon.colcon_core.verb:Building package 'wit_motion_imu_publisher' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/mr_robot/robot_ws/build/wit_motion_imu_publisher', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/mr_robot/robot_ws/install/wit_motion_imu_publisher', 'merge_install': False, 'path': '/home/mr_robot/robot_ws/src/farm_robot-main/wit_motion_imu_publisher', 'symlink_install': False, 'test_result_base': None}
+[0.841s] Level 5:colcon.colcon_core.verb:set package 'ydlidar_ros2_driver' build argument 'cmake_args' from command line to 'None'
+[0.841s] Level 5:colcon.colcon_core.verb:set package 'ydlidar_ros2_driver' build argument 'cmake_target' from command line to 'None'
+[0.841s] Level 5:colcon.colcon_core.verb:set package 'ydlidar_ros2_driver' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.841s] Level 5:colcon.colcon_core.verb:set package 'ydlidar_ros2_driver' build argument 'cmake_clean_cache' from command line to 'False'
+[0.841s] Level 5:colcon.colcon_core.verb:set package 'ydlidar_ros2_driver' build argument 'cmake_clean_first' from command line to 'False'
+[0.841s] Level 5:colcon.colcon_core.verb:set package 'ydlidar_ros2_driver' build argument 'cmake_force_configure' from command line to 'False'
+[0.841s] Level 5:colcon.colcon_core.verb:set package 'ydlidar_ros2_driver' build argument 'ament_cmake_args' from command line to 'None'
+[0.841s] Level 5:colcon.colcon_core.verb:set package 'ydlidar_ros2_driver' build argument 'catkin_cmake_args' from command line to 'None'
+[0.841s] Level 5:colcon.colcon_core.verb:set package 'ydlidar_ros2_driver' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.841s] DEBUG:colcon.colcon_core.verb:Building package 'ydlidar_ros2_driver' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/mr_robot/robot_ws/build/ydlidar_ros2_driver', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/mr_robot/robot_ws/install/ydlidar_ros2_driver', 'merge_install': False, 'path': '/home/mr_robot/robot_ws/src/farm_robot-main/ydlidar_ros2_driver-humble', 'symlink_install': False, 'test_result_base': None}
+[0.841s] INFO:colcon.colcon_core.executor:Executing jobs using 'sequential' executor
+[0.842s] DEBUG:colcon.colcon_core.executor.sequential:run_until_complete 'arduino_system'
+[0.842s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/mr_robot/robot_ws/src/farm_robot-main/arduino_system' with build type 'ament_cmake'
+[0.842s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/mr_robot/robot_ws/src/farm_robot-main/arduino_system'
+[0.849s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.849s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.849s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.864s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mr_robot/robot_ws/build/arduino_system': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/mr_robot/robot_ws/src/farm_robot-main/arduino_system -DCMAKE_INSTALL_PREFIX=/home/mr_robot/robot_ws/install/arduino_system
+[3.341s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mr_robot/robot_ws/build/arduino_system' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/mr_robot/robot_ws/src/farm_robot-main/arduino_system -DCMAKE_INSTALL_PREFIX=/home/mr_robot/robot_ws/install/arduino_system
+[3.344s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mr_robot/robot_ws/build/arduino_system': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/mr_robot/robot_ws/build/arduino_system -- -j12 -l12
+[24.708s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mr_robot/robot_ws/build/arduino_system' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/mr_robot/robot_ws/build/arduino_system -- -j12 -l12
+[24.723s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mr_robot/robot_ws/build/arduino_system': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/mr_robot/robot_ws/build/arduino_system
+[24.753s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(arduino_system)
+[24.755s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mr_robot/robot_ws/build/arduino_system' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/mr_robot/robot_ws/build/arduino_system
+[24.762s] Level 1:colcon.colcon_core.environment:checking '/home/mr_robot/robot_ws/install/arduino_system' for CMake module files
+[24.762s] Level 1:colcon.colcon_core.environment:checking '/home/mr_robot/robot_ws/install/arduino_system' for CMake config files
+[24.763s] Level 1:colcon.colcon_core.shell:create_environment_hook('arduino_system', 'cmake_prefix_path')
+[24.763s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mr_robot/robot_ws/install/arduino_system/share/arduino_system/hook/cmake_prefix_path.ps1'
+[24.764s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mr_robot/robot_ws/install/arduino_system/share/arduino_system/hook/cmake_prefix_path.dsv'
+[24.765s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mr_robot/robot_ws/install/arduino_system/share/arduino_system/hook/cmake_prefix_path.sh'
+[24.766s] Level 1:colcon.colcon_core.environment:checking '/home/mr_robot/robot_ws/install/arduino_system/lib'
+[24.766s] Level 1:colcon.colcon_core.environment:checking '/home/mr_robot/robot_ws/install/arduino_system/bin'
+[24.766s] Level 1:colcon.colcon_core.environment:checking '/home/mr_robot/robot_ws/install/arduino_system/lib/pkgconfig/arduino_system.pc'
+[24.766s] Level 1:colcon.colcon_core.environment:checking '/home/mr_robot/robot_ws/install/arduino_system/lib/python3.10/site-packages'
+[24.767s] Level 1:colcon.colcon_core.environment:checking '/home/mr_robot/robot_ws/install/arduino_system/bin'
+[24.767s] INFO:colcon.colcon_core.shell:Creating package script '/home/mr_robot/robot_ws/install/arduino_system/share/arduino_system/package.ps1'
+[24.768s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/mr_robot/robot_ws/install/arduino_system/share/arduino_system/package.dsv'
+[24.769s] INFO:colcon.colcon_core.shell:Creating package script '/home/mr_robot/robot_ws/install/arduino_system/share/arduino_system/package.sh'
+[24.770s] INFO:colcon.colcon_core.shell:Creating package script '/home/mr_robot/robot_ws/install/arduino_system/share/arduino_system/package.bash'
+[24.771s] INFO:colcon.colcon_core.shell:Creating package script '/home/mr_robot/robot_ws/install/arduino_system/share/arduino_system/package.zsh'
+[24.773s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/mr_robot/robot_ws/install/arduino_system/share/colcon-core/packages/arduino_system)
+[24.773s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(arduino_system)
+[24.774s] Level 1:colcon.colcon_core.environment:checking '/home/mr_robot/robot_ws/install/arduino_system' for CMake module files
+[24.774s] Level 1:colcon.colcon_core.environment:checking '/home/mr_robot/robot_ws/install/arduino_system' for CMake config files
+[24.775s] Level 1:colcon.colcon_core.shell:create_environment_hook('arduino_system', 'cmake_prefix_path')
+[24.775s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mr_robot/robot_ws/install/arduino_system/share/arduino_system/hook/cmake_prefix_path.ps1'
+[24.775s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mr_robot/robot_ws/install/arduino_system/share/arduino_system/hook/cmake_prefix_path.dsv'
+[24.776s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mr_robot/robot_ws/install/arduino_system/share/arduino_system/hook/cmake_prefix_path.sh'
+[24.776s] Level 1:colcon.colcon_core.environment:checking '/home/mr_robot/robot_ws/install/arduino_system/lib'
+[24.776s] Level 1:colcon.colcon_core.environment:checking '/home/mr_robot/robot_ws/install/arduino_system/bin'
+[24.777s] Level 1:colcon.colcon_core.environment:checking '/home/mr_robot/robot_ws/install/arduino_system/lib/pkgconfig/arduino_system.pc'
+[24.777s] Level 1:colcon.colcon_core.environment:checking '/home/mr_robot/robot_ws/install/arduino_system/lib/python3.10/site-packages'
+[24.777s] Level 1:colcon.colcon_core.environment:checking '/home/mr_robot/robot_ws/install/arduino_system/bin'
+[24.777s] INFO:colcon.colcon_core.shell:Creating package script '/home/mr_robot/robot_ws/install/arduino_system/share/arduino_system/package.ps1'
+[24.778s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/mr_robot/robot_ws/install/arduino_system/share/arduino_system/package.dsv'
+[24.779s] INFO:colcon.colcon_core.shell:Creating package script '/home/mr_robot/robot_ws/install/arduino_system/share/arduino_system/package.sh'
+[24.779s] INFO:colcon.colcon_core.shell:Creating package script '/home/mr_robot/robot_ws/install/arduino_system/share/arduino_system/package.bash'
+[24.780s] INFO:colcon.colcon_core.shell:Creating package script '/home/mr_robot/robot_ws/install/arduino_system/share/arduino_system/package.zsh'
+[24.780s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/mr_robot/robot_ws/install/arduino_system/share/colcon-core/packages/arduino_system)
+[24.781s] DEBUG:colcon.colcon_core.executor.sequential:run_until_complete 'arduino_system' finished with '0'
+[24.781s] DEBUG:colcon.colcon_core.executor.sequential:run_until_complete 'farmbot_carto'
+[24.781s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/mr_robot/robot_ws/src/farm_robot-main/farmbot_carto' with build type 'ament_cmake'
+[24.781s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/mr_robot/robot_ws/src/farm_robot-main/farmbot_carto'
+[24.781s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[24.781s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[24.800s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mr_robot/robot_ws/build/farmbot_carto': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/mr_robot/robot_ws/src/farm_robot-main/farmbot_carto -DCMAKE_INSTALL_PREFIX=/home/mr_robot/robot_ws/install/farmbot_carto
+[30.084s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mr_robot/robot_ws/build/farmbot_carto' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/mr_robot/robot_ws/src/farm_robot-main/farmbot_carto -DCMAKE_INSTALL_PREFIX=/home/mr_robot/robot_ws/install/farmbot_carto
+[30.086s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mr_robot/robot_ws/build/farmbot_carto': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/mr_robot/robot_ws/build/farmbot_carto -- -j12 -l12
+[30.152s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mr_robot/robot_ws/build/farmbot_carto' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/mr_robot/robot_ws/build/farmbot_carto -- -j12 -l12
+[30.154s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mr_robot/robot_ws/build/farmbot_carto': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/mr_robot/robot_ws/build/farmbot_carto
+[30.172s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(farmbot_carto)
+[30.172s] Level 1:colcon.colcon_core.environment:checking '/home/mr_robot/robot_ws/install/farmbot_carto' for CMake module files
+[30.173s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mr_robot/robot_ws/build/farmbot_carto' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/mr_robot/robot_ws/build/farmbot_carto
+[30.173s] Level 1:colcon.colcon_core.environment:checking '/home/mr_robot/robot_ws/install/farmbot_carto' for CMake config files
+[30.173s] Level 1:colcon.colcon_core.shell:create_environment_hook('farmbot_carto', 'cmake_prefix_path')
+[30.174s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mr_robot/robot_ws/install/farmbot_carto/share/farmbot_carto/hook/cmake_prefix_path.ps1'
+[30.174s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mr_robot/robot_ws/install/farmbot_carto/share/farmbot_carto/hook/cmake_prefix_path.dsv'
+[30.175s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mr_robot/robot_ws/install/farmbot_carto/share/farmbot_carto/hook/cmake_prefix_path.sh'
+[30.175s] Level 1:colcon.colcon_core.environment:checking '/home/mr_robot/robot_ws/install/farmbot_carto/bin'
+[30.175s] Level 1:colcon.colcon_core.environment:checking '/home/mr_robot/robot_ws/install/farmbot_carto/lib/pkgconfig/farmbot_carto.pc'
+[30.176s] Level 1:colcon.colcon_core.environment:checking '/home/mr_robot/robot_ws/install/farmbot_carto/lib/python3.10/site-packages'
+[30.176s] Level 1:colcon.colcon_core.environment:checking '/home/mr_robot/robot_ws/install/farmbot_carto/bin'
+[30.176s] INFO:colcon.colcon_core.shell:Creating package script '/home/mr_robot/robot_ws/install/farmbot_carto/share/farmbot_carto/package.ps1'
+[30.177s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/mr_robot/robot_ws/install/farmbot_carto/share/farmbot_carto/package.dsv'
+[30.177s] INFO:colcon.colcon_core.shell:Creating package script '/home/mr_robot/robot_ws/install/farmbot_carto/share/farmbot_carto/package.sh'
+[30.178s] INFO:colcon.colcon_core.shell:Creating package script '/home/mr_robot/robot_ws/install/farmbot_carto/share/farmbot_carto/package.bash'
+[30.178s] INFO:colcon.colcon_core.shell:Creating package script '/home/mr_robot/robot_ws/install/farmbot_carto/share/farmbot_carto/package.zsh'
+[30.179s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/mr_robot/robot_ws/install/farmbot_carto/share/colcon-core/packages/farmbot_carto)
+[30.179s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(farmbot_carto)
+[30.180s] Level 1:colcon.colcon_core.environment:checking '/home/mr_robot/robot_ws/install/farmbot_carto' for CMake module files
+[30.180s] Level 1:colcon.colcon_core.environment:checking '/home/mr_robot/robot_ws/install/farmbot_carto' for CMake config files
+[30.181s] Level 1:colcon.colcon_core.shell:create_environment_hook('farmbot_carto', 'cmake_prefix_path')
+[30.181s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mr_robot/robot_ws/install/farmbot_carto/share/farmbot_carto/hook/cmake_prefix_path.ps1'
+[30.181s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mr_robot/robot_ws/install/farmbot_carto/share/farmbot_carto/hook/cmake_prefix_path.dsv'
+[30.182s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mr_robot/robot_ws/install/farmbot_carto/share/farmbot_carto/hook/cmake_prefix_path.sh'
+[30.182s] Level 1:colcon.colcon_core.environment:checking '/home/mr_robot/robot_ws/install/farmbot_carto/bin'
+[30.182s] Level 1:colcon.colcon_core.environment:checking '/home/mr_robot/robot_ws/install/farmbot_carto/lib/pkgconfig/farmbot_carto.pc'
+[30.183s] Level 1:colcon.colcon_core.environment:checking '/home/mr_robot/robot_ws/install/farmbot_carto/lib/python3.10/site-packages'
+[30.183s] Level 1:colcon.colcon_core.environment:checking '/home/mr_robot/robot_ws/install/farmbot_carto/bin'
+[30.183s] INFO:colcon.colcon_core.shell:Creating package script '/home/mr_robot/robot_ws/install/farmbot_carto/share/farmbot_carto/package.ps1'
+[30.184s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/mr_robot/robot_ws/install/farmbot_carto/share/farmbot_carto/package.dsv'
+[30.185s] INFO:colcon.colcon_core.shell:Creating package script '/home/mr_robot/robot_ws/install/farmbot_carto/share/farmbot_carto/package.sh'
+[30.185s] INFO:colcon.colcon_core.shell:Creating package script '/home/mr_robot/robot_ws/install/farmbot_carto/share/farmbot_carto/package.bash'
+[30.186s] INFO:colcon.colcon_core.shell:Creating package script '/home/mr_robot/robot_ws/install/farmbot_carto/share/farmbot_carto/package.zsh'
+[30.186s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/mr_robot/robot_ws/install/farmbot_carto/share/colcon-core/packages/farmbot_carto)
+[30.186s] DEBUG:colcon.colcon_core.executor.sequential:run_until_complete 'farmbot_carto' finished with '0'
+[30.186s] DEBUG:colcon.colcon_core.executor.sequential:run_until_complete 'farmbot_description'
+[30.187s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/mr_robot/robot_ws/src/farm_robot-main/farmbot_description' with build type 'ament_cmake'
+[30.187s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/mr_robot/robot_ws/src/farm_robot-main/farmbot_description'
+[30.187s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[30.187s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[30.206s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mr_robot/robot_ws/build/farmbot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/mr_robot/robot_ws/src/farm_robot-main/farmbot_description -DCMAKE_INSTALL_PREFIX=/home/mr_robot/robot_ws/install/farmbot_description
+[31.202s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mr_robot/robot_ws/build/farmbot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/mr_robot/robot_ws/src/farm_robot-main/farmbot_description -DCMAKE_INSTALL_PREFIX=/home/mr_robot/robot_ws/install/farmbot_description
+[31.204s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mr_robot/robot_ws/build/farmbot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/mr_robot/robot_ws/build/farmbot_description -- -j12 -l12
+[31.260s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mr_robot/robot_ws/build/farmbot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/mr_robot/robot_ws/build/farmbot_description -- -j12 -l12
+[31.262s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mr_robot/robot_ws/build/farmbot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/mr_robot/robot_ws/build/farmbot_description
+[31.280s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(farmbot_description)
+[31.280s] Level 1:colcon.colcon_core.environment:checking '/home/mr_robot/robot_ws/install/farmbot_description' for CMake module files
+[31.281s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mr_robot/robot_ws/build/farmbot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/mr_robot/robot_ws/build/farmbot_description
+[31.281s] Level 1:colcon.colcon_core.environment:checking '/home/mr_robot/robot_ws/install/farmbot_description' for CMake config files
+[31.282s] Level 1:colcon.colcon_core.shell:create_environment_hook('farmbot_description', 'cmake_prefix_path')
+[31.282s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mr_robot/robot_ws/install/farmbot_description/share/farmbot_description/hook/cmake_prefix_path.ps1'
+[31.282s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mr_robot/robot_ws/install/farmbot_description/share/farmbot_description/hook/cmake_prefix_path.dsv'
+[31.283s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mr_robot/robot_ws/install/farmbot_description/share/farmbot_description/hook/cmake_prefix_path.sh'
+[31.284s] Level 1:colcon.colcon_core.environment:checking '/home/mr_robot/robot_ws/install/farmbot_description/bin'
+[31.284s] Level 1:colcon.colcon_core.environment:checking '/home/mr_robot/robot_ws/install/farmbot_description/lib/pkgconfig/farmbot_description.pc'
+[31.284s] Level 1:colcon.colcon_core.environment:checking '/home/mr_robot/robot_ws/install/farmbot_description/lib/python3.10/site-packages'
+[31.284s] Level 1:colcon.colcon_core.environment:checking '/home/mr_robot/robot_ws/install/farmbot_description/bin'
+[31.285s] INFO:colcon.colcon_core.shell:Creating package script '/home/mr_robot/robot_ws/install/farmbot_description/share/farmbot_description/package.ps1'
+[31.285s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/mr_robot/robot_ws/install/farmbot_description/share/farmbot_description/package.dsv'
+[31.286s] INFO:colcon.colcon_core.shell:Creating package script '/home/mr_robot/robot_ws/install/farmbot_description/share/farmbot_description/package.sh'
+[31.286s] INFO:colcon.colcon_core.shell:Creating package script '/home/mr_robot/robot_ws/install/farmbot_description/share/farmbot_description/package.bash'
+[31.287s] INFO:colcon.colcon_core.shell:Creating package script '/home/mr_robot/robot_ws/install/farmbot_description/share/farmbot_description/package.zsh'
+[31.287s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/mr_robot/robot_ws/install/farmbot_description/share/colcon-core/packages/farmbot_description)
+[31.288s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(farmbot_description)
+[31.288s] Level 1:colcon.colcon_core.environment:checking '/home/mr_robot/robot_ws/install/farmbot_description' for CMake module files
+[31.288s] Level 1:colcon.colcon_core.environment:checking '/home/mr_robot/robot_ws/install/farmbot_description' for CMake config files
+[31.289s] Level 1:colcon.colcon_core.shell:create_environment_hook('farmbot_description', 'cmake_prefix_path')
+[31.289s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mr_robot/robot_ws/install/farmbot_description/share/farmbot_description/hook/cmake_prefix_path.ps1'
+[31.290s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mr_robot/robot_ws/install/farmbot_description/share/farmbot_description/hook/cmake_prefix_path.dsv'
+[31.290s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mr_robot/robot_ws/install/farmbot_description/share/farmbot_description/hook/cmake_prefix_path.sh'
+[31.291s] Level 1:colcon.colcon_core.environment:checking '/home/mr_robot/robot_ws/install/farmbot_description/bin'
+[31.291s] Level 1:colcon.colcon_core.environment:checking '/home/mr_robot/robot_ws/install/farmbot_description/lib/pkgconfig/farmbot_description.pc'
+[31.291s] Level 1:colcon.colcon_core.environment:checking '/home/mr_robot/robot_ws/install/farmbot_description/lib/python3.10/site-packages'
+[31.291s] Level 1:colcon.colcon_core.environment:checking '/home/mr_robot/robot_ws/install/farmbot_description/bin'
+[31.292s] INFO:colcon.colcon_core.shell:Creating package script '/home/mr_robot/robot_ws/install/farmbot_description/share/farmbot_description/package.ps1'
+[31.292s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/mr_robot/robot_ws/install/farmbot_description/share/farmbot_description/package.dsv'
+[31.293s] INFO:colcon.colcon_core.shell:Creating package script '/home/mr_robot/robot_ws/install/farmbot_description/share/farmbot_description/package.sh'
+[31.294s] INFO:colcon.colcon_core.shell:Creating package script '/home/mr_robot/robot_ws/install/farmbot_description/share/farmbot_description/package.bash'
+[31.294s] INFO:colcon.colcon_core.shell:Creating package script '/home/mr_robot/robot_ws/install/farmbot_description/share/farmbot_description/package.zsh'
+[31.295s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/mr_robot/robot_ws/install/farmbot_description/share/colcon-core/packages/farmbot_description)
+[31.295s] DEBUG:colcon.colcon_core.executor.sequential:run_until_complete 'farmbot_description' finished with '0'
+[31.295s] DEBUG:colcon.colcon_core.executor.sequential:run_until_complete 'farmbot_ekf'
+[31.295s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/mr_robot/robot_ws/src/farm_robot-main/farmbot_ekf' with build type 'ament_cmake'
+[31.295s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/mr_robot/robot_ws/src/farm_robot-main/farmbot_ekf'
+[31.295s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[31.295s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[31.313s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mr_robot/robot_ws/build/farmbot_ekf': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/mr_robot/robot_ws/src/farm_robot-main/farmbot_ekf -DCMAKE_INSTALL_PREFIX=/home/mr_robot/robot_ws/install/farmbot_ekf
+[33.024s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mr_robot/robot_ws/build/farmbot_ekf' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/mr_robot/robot_ws/src/farm_robot-main/farmbot_ekf -DCMAKE_INSTALL_PREFIX=/home/mr_robot/robot_ws/install/farmbot_ekf
+[33.026s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mr_robot/robot_ws/build/farmbot_ekf': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/mr_robot/robot_ws/build/farmbot_ekf -- -j12 -l12
+[33.084s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mr_robot/robot_ws/build/farmbot_ekf' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/mr_robot/robot_ws/build/farmbot_ekf -- -j12 -l12
+[33.086s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mr_robot/robot_ws/build/farmbot_ekf': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/mr_robot/robot_ws/build/farmbot_ekf
+[33.105s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(farmbot_ekf)
+[33.106s] Level 1:colcon.colcon_core.environment:checking '/home/mr_robot/robot_ws/install/farmbot_ekf' for CMake module files
+[33.106s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mr_robot/robot_ws/build/farmbot_ekf' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/mr_robot/robot_ws/build/farmbot_ekf
+[33.107s] Level 1:colcon.colcon_core.environment:checking '/home/mr_robot/robot_ws/install/farmbot_ekf' for CMake config files
+[33.107s] Level 1:colcon.colcon_core.shell:create_environment_hook('farmbot_ekf', 'cmake_prefix_path')
+[33.107s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mr_robot/robot_ws/install/farmbot_ekf/share/farmbot_ekf/hook/cmake_prefix_path.ps1'
+[33.108s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mr_robot/robot_ws/install/farmbot_ekf/share/farmbot_ekf/hook/cmake_prefix_path.dsv'
+[33.108s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mr_robot/robot_ws/install/farmbot_ekf/share/farmbot_ekf/hook/cmake_prefix_path.sh'
+[33.109s] Level 1:colcon.colcon_core.environment:checking '/home/mr_robot/robot_ws/install/farmbot_ekf/bin'
+[33.109s] Level 1:colcon.colcon_core.environment:checking '/home/mr_robot/robot_ws/install/farmbot_ekf/lib/pkgconfig/farmbot_ekf.pc'
+[33.109s] Level 1:colcon.colcon_core.environment:checking '/home/mr_robot/robot_ws/install/farmbot_ekf/lib/python3.10/site-packages'
+[33.110s] Level 1:colcon.colcon_core.environment:checking '/home/mr_robot/robot_ws/install/farmbot_ekf/bin'
+[33.110s] INFO:colcon.colcon_core.shell:Creating package script '/home/mr_robot/robot_ws/install/farmbot_ekf/share/farmbot_ekf/package.ps1'
+[33.111s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/mr_robot/robot_ws/install/farmbot_ekf/share/farmbot_ekf/package.dsv'
+[33.111s] INFO:colcon.colcon_core.shell:Creating package script '/home/mr_robot/robot_ws/install/farmbot_ekf/share/farmbot_ekf/package.sh'
+[33.112s] INFO:colcon.colcon_core.shell:Creating package script '/home/mr_robot/robot_ws/install/farmbot_ekf/share/farmbot_ekf/package.bash'
+[33.112s] INFO:colcon.colcon_core.shell:Creating package script '/home/mr_robot/robot_ws/install/farmbot_ekf/share/farmbot_ekf/package.zsh'
+[33.112s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/mr_robot/robot_ws/install/farmbot_ekf/share/colcon-core/packages/farmbot_ekf)
+[33.113s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(farmbot_ekf)
+[33.114s] Level 1:colcon.colcon_core.environment:checking '/home/mr_robot/robot_ws/install/farmbot_ekf' for CMake module files
+[33.114s] Level 1:colcon.colcon_core.environment:checking '/home/mr_robot/robot_ws/install/farmbot_ekf' for CMake config files
+[33.115s] Level 1:colcon.colcon_core.shell:create_environment_hook('farmbot_ekf', 'cmake_prefix_path')
+[33.115s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mr_robot/robot_ws/install/farmbot_ekf/share/farmbot_ekf/hook/cmake_prefix_path.ps1'
+[33.115s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mr_robot/robot_ws/install/farmbot_ekf/share/farmbot_ekf/hook/cmake_prefix_path.dsv'
+[33.116s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mr_robot/robot_ws/install/farmbot_ekf/share/farmbot_ekf/hook/cmake_prefix_path.sh'
+[33.116s] Level 1:colcon.colcon_core.environment:checking '/home/mr_robot/robot_ws/install/farmbot_ekf/bin'
+[33.116s] Level 1:colcon.colcon_core.environment:checking '/home/mr_robot/robot_ws/install/farmbot_ekf/lib/pkgconfig/farmbot_ekf.pc'
+[33.117s] Level 1:colcon.colcon_core.environment:checking '/home/mr_robot/robot_ws/install/farmbot_ekf/lib/python3.10/site-packages'
+[33.117s] Level 1:colcon.colcon_core.environment:checking '/home/mr_robot/robot_ws/install/farmbot_ekf/bin'
+[33.117s] INFO:colcon.colcon_core.shell:Creating package script '/home/mr_robot/robot_ws/install/farmbot_ekf/share/farmbot_ekf/package.ps1'
+[33.118s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/mr_robot/robot_ws/install/farmbot_ekf/share/farmbot_ekf/package.dsv'
+[33.119s] INFO:colcon.colcon_core.shell:Creating package script '/home/mr_robot/robot_ws/install/farmbot_ekf/share/farmbot_ekf/package.sh'
+[33.119s] INFO:colcon.colcon_core.shell:Creating package script '/home/mr_robot/robot_ws/install/farmbot_ekf/share/farmbot_ekf/package.bash'
+[33.120s] INFO:colcon.colcon_core.shell:Creating package script '/home/mr_robot/robot_ws/install/farmbot_ekf/share/farmbot_ekf/package.zsh'
+[33.120s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/mr_robot/robot_ws/install/farmbot_ekf/share/colcon-core/packages/farmbot_ekf)
+[33.120s] DEBUG:colcon.colcon_core.executor.sequential:run_until_complete 'farmbot_ekf' finished with '0'
+[33.121s] DEBUG:colcon.colcon_core.executor.sequential:run_until_complete 'farmbot_nav2'
+[33.121s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/mr_robot/robot_ws/src/farm_robot-main/farmbot_nav2' with build type 'ament_cmake'
+[33.121s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/mr_robot/robot_ws/src/farm_robot-main/farmbot_nav2'
+[33.121s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[33.121s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[33.137s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mr_robot/robot_ws/build/farmbot_nav2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/mr_robot/robot_ws/src/farm_robot-main/farmbot_nav2 -DCMAKE_INSTALL_PREFIX=/home/mr_robot/robot_ws/install/farmbot_nav2
+[35.174s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mr_robot/robot_ws/build/farmbot_nav2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/mr_robot/robot_ws/src/farm_robot-main/farmbot_nav2 -DCMAKE_INSTALL_PREFIX=/home/mr_robot/robot_ws/install/farmbot_nav2
+[35.175s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mr_robot/robot_ws/build/farmbot_nav2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/mr_robot/robot_ws/build/farmbot_nav2 -- -j12 -l12
+[41.652s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mr_robot/robot_ws/build/farmbot_nav2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/mr_robot/robot_ws/build/farmbot_nav2 -- -j12 -l12
+[41.654s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mr_robot/robot_ws/build/farmbot_nav2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/mr_robot/robot_ws/build/farmbot_nav2
+[41.683s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(farmbot_nav2)
+[41.683s] Level 1:colcon.colcon_core.environment:checking '/home/mr_robot/robot_ws/install/farmbot_nav2' for CMake module files
+[41.684s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mr_robot/robot_ws/build/farmbot_nav2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/mr_robot/robot_ws/build/farmbot_nav2
+[41.684s] Level 1:colcon.colcon_core.environment:checking '/home/mr_robot/robot_ws/install/farmbot_nav2' for CMake config files
+[41.685s] Level 1:colcon.colcon_core.shell:create_environment_hook('farmbot_nav2', 'cmake_prefix_path')
+[41.685s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mr_robot/robot_ws/install/farmbot_nav2/share/farmbot_nav2/hook/cmake_prefix_path.ps1'
+[41.685s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mr_robot/robot_ws/install/farmbot_nav2/share/farmbot_nav2/hook/cmake_prefix_path.dsv'
+[41.686s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mr_robot/robot_ws/install/farmbot_nav2/share/farmbot_nav2/hook/cmake_prefix_path.sh'
+[41.686s] Level 1:colcon.colcon_core.environment:checking '/home/mr_robot/robot_ws/install/farmbot_nav2/lib'
+[41.687s] Level 1:colcon.colcon_core.environment:checking '/home/mr_robot/robot_ws/install/farmbot_nav2/bin'
+[41.687s] Level 1:colcon.colcon_core.environment:checking '/home/mr_robot/robot_ws/install/farmbot_nav2/lib/pkgconfig/farmbot_nav2.pc'
+[41.687s] Level 1:colcon.colcon_core.environment:checking '/home/mr_robot/robot_ws/install/farmbot_nav2/lib/python3.10/site-packages'
+[41.687s] Level 1:colcon.colcon_core.environment:checking '/home/mr_robot/robot_ws/install/farmbot_nav2/bin'
+[41.688s] INFO:colcon.colcon_core.shell:Creating package script '/home/mr_robot/robot_ws/install/farmbot_nav2/share/farmbot_nav2/package.ps1'
+[41.688s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/mr_robot/robot_ws/install/farmbot_nav2/share/farmbot_nav2/package.dsv'
+[41.689s] INFO:colcon.colcon_core.shell:Creating package script '/home/mr_robot/robot_ws/install/farmbot_nav2/share/farmbot_nav2/package.sh'
+[41.689s] INFO:colcon.colcon_core.shell:Creating package script '/home/mr_robot/robot_ws/install/farmbot_nav2/share/farmbot_nav2/package.bash'
+[41.690s] INFO:colcon.colcon_core.shell:Creating package script '/home/mr_robot/robot_ws/install/farmbot_nav2/share/farmbot_nav2/package.zsh'
+[41.690s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/mr_robot/robot_ws/install/farmbot_nav2/share/colcon-core/packages/farmbot_nav2)
+[41.691s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(farmbot_nav2)
+[41.691s] Level 1:colcon.colcon_core.environment:checking '/home/mr_robot/robot_ws/install/farmbot_nav2' for CMake module files
+[41.692s] Level 1:colcon.colcon_core.environment:checking '/home/mr_robot/robot_ws/install/farmbot_nav2' for CMake config files
+[41.692s] Level 1:colcon.colcon_core.shell:create_environment_hook('farmbot_nav2', 'cmake_prefix_path')
+[41.692s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mr_robot/robot_ws/install/farmbot_nav2/share/farmbot_nav2/hook/cmake_prefix_path.ps1'
+[41.693s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mr_robot/robot_ws/install/farmbot_nav2/share/farmbot_nav2/hook/cmake_prefix_path.dsv'
+[41.693s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mr_robot/robot_ws/install/farmbot_nav2/share/farmbot_nav2/hook/cmake_prefix_path.sh'
+[41.694s] Level 1:colcon.colcon_core.environment:checking '/home/mr_robot/robot_ws/install/farmbot_nav2/lib'
+[41.694s] Level 1:colcon.colcon_core.environment:checking '/home/mr_robot/robot_ws/install/farmbot_nav2/bin'
+[41.694s] Level 1:colcon.colcon_core.environment:checking '/home/mr_robot/robot_ws/install/farmbot_nav2/lib/pkgconfig/farmbot_nav2.pc'
+[41.694s] Level 1:colcon.colcon_core.environment:checking '/home/mr_robot/robot_ws/install/farmbot_nav2/lib/python3.10/site-packages'
+[41.695s] Level 1:colcon.colcon_core.environment:checking '/home/mr_robot/robot_ws/install/farmbot_nav2/bin'
+[41.695s] INFO:colcon.colcon_core.shell:Creating package script '/home/mr_robot/robot_ws/install/farmbot_nav2/share/farmbot_nav2/package.ps1'
+[41.696s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/mr_robot/robot_ws/install/farmbot_nav2/share/farmbot_nav2/package.dsv'
+[41.696s] INFO:colcon.colcon_core.shell:Creating package script '/home/mr_robot/robot_ws/install/farmbot_nav2/share/farmbot_nav2/package.sh'
+[41.697s] INFO:colcon.colcon_core.shell:Creating package script '/home/mr_robot/robot_ws/install/farmbot_nav2/share/farmbot_nav2/package.bash'
+[41.697s] INFO:colcon.colcon_core.shell:Creating package script '/home/mr_robot/robot_ws/install/farmbot_nav2/share/farmbot_nav2/package.zsh'
+[41.698s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/mr_robot/robot_ws/install/farmbot_nav2/share/colcon-core/packages/farmbot_nav2)
+[41.698s] DEBUG:colcon.colcon_core.executor.sequential:run_until_complete 'farmbot_nav2' finished with '0'
+[41.698s] DEBUG:colcon.colcon_core.executor.sequential:run_until_complete 'wit_motion_imu_publisher'
+[41.699s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/mr_robot/robot_ws/src/farm_robot-main/wit_motion_imu_publisher' with build type 'ament_cmake'
+[41.699s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/mr_robot/robot_ws/src/farm_robot-main/wit_motion_imu_publisher'
+[41.699s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[41.699s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[41.719s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mr_robot/robot_ws/build/wit_motion_imu_publisher': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/mr_robot/robot_ws/src/farm_robot-main/wit_motion_imu_publisher -DCMAKE_INSTALL_PREFIX=/home/mr_robot/robot_ws/install/wit_motion_imu_publisher
+[43.534s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mr_robot/robot_ws/build/wit_motion_imu_publisher' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/mr_robot/robot_ws/src/farm_robot-main/wit_motion_imu_publisher -DCMAKE_INSTALL_PREFIX=/home/mr_robot/robot_ws/install/wit_motion_imu_publisher
+[43.536s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mr_robot/robot_ws/build/wit_motion_imu_publisher': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/mr_robot/robot_ws/build/wit_motion_imu_publisher -- -j12 -l12
+[49.587s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mr_robot/robot_ws/build/wit_motion_imu_publisher' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/mr_robot/robot_ws/build/wit_motion_imu_publisher -- -j12 -l12
+[49.590s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mr_robot/robot_ws/build/wit_motion_imu_publisher': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/mr_robot/robot_ws/build/wit_motion_imu_publisher
+[49.609s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(wit_motion_imu_publisher)
+[49.610s] Level 1:colcon.colcon_core.environment:checking '/home/mr_robot/robot_ws/install/wit_motion_imu_publisher' for CMake module files
+[49.610s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mr_robot/robot_ws/build/wit_motion_imu_publisher' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/mr_robot/robot_ws/build/wit_motion_imu_publisher
+[49.611s] Level 1:colcon.colcon_core.environment:checking '/home/mr_robot/robot_ws/install/wit_motion_imu_publisher' for CMake config files
+[49.611s] Level 1:colcon.colcon_core.shell:create_environment_hook('wit_motion_imu_publisher', 'cmake_prefix_path')
+[49.611s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mr_robot/robot_ws/install/wit_motion_imu_publisher/share/wit_motion_imu_publisher/hook/cmake_prefix_path.ps1'
+[49.612s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mr_robot/robot_ws/install/wit_motion_imu_publisher/share/wit_motion_imu_publisher/hook/cmake_prefix_path.dsv'
+[49.612s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mr_robot/robot_ws/install/wit_motion_imu_publisher/share/wit_motion_imu_publisher/hook/cmake_prefix_path.sh'
+[49.613s] Level 1:colcon.colcon_core.environment:checking '/home/mr_robot/robot_ws/install/wit_motion_imu_publisher/lib'
+[49.613s] Level 1:colcon.colcon_core.environment:checking '/home/mr_robot/robot_ws/install/wit_motion_imu_publisher/bin'
+[49.613s] Level 1:colcon.colcon_core.environment:checking '/home/mr_robot/robot_ws/install/wit_motion_imu_publisher/lib/pkgconfig/wit_motion_imu_publisher.pc'
+[49.614s] Level 1:colcon.colcon_core.environment:checking '/home/mr_robot/robot_ws/install/wit_motion_imu_publisher/lib/python3.10/site-packages'
+[49.614s] Level 1:colcon.colcon_core.environment:checking '/home/mr_robot/robot_ws/install/wit_motion_imu_publisher/bin'
+[49.614s] INFO:colcon.colcon_core.shell:Creating package script '/home/mr_robot/robot_ws/install/wit_motion_imu_publisher/share/wit_motion_imu_publisher/package.ps1'
+[49.615s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/mr_robot/robot_ws/install/wit_motion_imu_publisher/share/wit_motion_imu_publisher/package.dsv'
+[49.615s] INFO:colcon.colcon_core.shell:Creating package script '/home/mr_robot/robot_ws/install/wit_motion_imu_publisher/share/wit_motion_imu_publisher/package.sh'
+[49.616s] INFO:colcon.colcon_core.shell:Creating package script '/home/mr_robot/robot_ws/install/wit_motion_imu_publisher/share/wit_motion_imu_publisher/package.bash'
+[49.616s] INFO:colcon.colcon_core.shell:Creating package script '/home/mr_robot/robot_ws/install/wit_motion_imu_publisher/share/wit_motion_imu_publisher/package.zsh'
+[49.617s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/mr_robot/robot_ws/install/wit_motion_imu_publisher/share/colcon-core/packages/wit_motion_imu_publisher)
+[49.618s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(wit_motion_imu_publisher)
+[49.618s] Level 1:colcon.colcon_core.environment:checking '/home/mr_robot/robot_ws/install/wit_motion_imu_publisher' for CMake module files
+[49.618s] Level 1:colcon.colcon_core.environment:checking '/home/mr_robot/robot_ws/install/wit_motion_imu_publisher' for CMake config files
+[49.619s] Level 1:colcon.colcon_core.shell:create_environment_hook('wit_motion_imu_publisher', 'cmake_prefix_path')
+[49.619s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mr_robot/robot_ws/install/wit_motion_imu_publisher/share/wit_motion_imu_publisher/hook/cmake_prefix_path.ps1'
+[49.620s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mr_robot/robot_ws/install/wit_motion_imu_publisher/share/wit_motion_imu_publisher/hook/cmake_prefix_path.dsv'
+[49.620s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mr_robot/robot_ws/install/wit_motion_imu_publisher/share/wit_motion_imu_publisher/hook/cmake_prefix_path.sh'
+[49.621s] Level 1:colcon.colcon_core.environment:checking '/home/mr_robot/robot_ws/install/wit_motion_imu_publisher/lib'
+[49.621s] Level 1:colcon.colcon_core.environment:checking '/home/mr_robot/robot_ws/install/wit_motion_imu_publisher/bin'
+[49.621s] Level 1:colcon.colcon_core.environment:checking '/home/mr_robot/robot_ws/install/wit_motion_imu_publisher/lib/pkgconfig/wit_motion_imu_publisher.pc'
+[49.621s] Level 1:colcon.colcon_core.environment:checking '/home/mr_robot/robot_ws/install/wit_motion_imu_publisher/lib/python3.10/site-packages'
+[49.621s] Level 1:colcon.colcon_core.environment:checking '/home/mr_robot/robot_ws/install/wit_motion_imu_publisher/bin'
+[49.622s] INFO:colcon.colcon_core.shell:Creating package script '/home/mr_robot/robot_ws/install/wit_motion_imu_publisher/share/wit_motion_imu_publisher/package.ps1'
+[49.622s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/mr_robot/robot_ws/install/wit_motion_imu_publisher/share/wit_motion_imu_publisher/package.dsv'
+[49.623s] INFO:colcon.colcon_core.shell:Creating package script '/home/mr_robot/robot_ws/install/wit_motion_imu_publisher/share/wit_motion_imu_publisher/package.sh'
+[49.623s] INFO:colcon.colcon_core.shell:Creating package script '/home/mr_robot/robot_ws/install/wit_motion_imu_publisher/share/wit_motion_imu_publisher/package.bash'
+[49.624s] INFO:colcon.colcon_core.shell:Creating package script '/home/mr_robot/robot_ws/install/wit_motion_imu_publisher/share/wit_motion_imu_publisher/package.zsh'
+[49.624s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/mr_robot/robot_ws/install/wit_motion_imu_publisher/share/colcon-core/packages/wit_motion_imu_publisher)
+[49.625s] DEBUG:colcon.colcon_core.executor.sequential:run_until_complete 'wit_motion_imu_publisher' finished with '0'
+[49.625s] DEBUG:colcon.colcon_core.executor.sequential:run_until_complete 'ydlidar_ros2_driver'
+[49.625s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/mr_robot/robot_ws/src/farm_robot-main/ydlidar_ros2_driver-humble' with build type 'ament_cmake'
+[49.625s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/mr_robot/robot_ws/src/farm_robot-main/ydlidar_ros2_driver-humble'
+[49.625s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[49.625s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[49.642s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mr_robot/robot_ws/build/ydlidar_ros2_driver': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/mr_robot/robot_ws/src/farm_robot-main/ydlidar_ros2_driver-humble -DCMAKE_INSTALL_PREFIX=/home/mr_robot/robot_ws/install/ydlidar_ros2_driver
+[51.567s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mr_robot/robot_ws/build/ydlidar_ros2_driver' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/mr_robot/robot_ws/src/farm_robot-main/ydlidar_ros2_driver-humble -DCMAKE_INSTALL_PREFIX=/home/mr_robot/robot_ws/install/ydlidar_ros2_driver
+[51.569s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mr_robot/robot_ws/build/ydlidar_ros2_driver': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/mr_robot/robot_ws/build/ydlidar_ros2_driver -- -j12 -l12
+[63.225s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mr_robot/robot_ws/build/ydlidar_ros2_driver' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/mr_robot/robot_ws/build/ydlidar_ros2_driver -- -j12 -l12
+[63.227s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mr_robot/robot_ws/build/ydlidar_ros2_driver': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/mr_robot/robot_ws/build/ydlidar_ros2_driver
+[63.257s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ydlidar_ros2_driver)
+[63.257s] Level 1:colcon.colcon_core.environment:checking '/home/mr_robot/robot_ws/install/ydlidar_ros2_driver' for CMake module files
+[63.258s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mr_robot/robot_ws/build/ydlidar_ros2_driver' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/mr_robot/robot_ws/build/ydlidar_ros2_driver
+[63.258s] Level 1:colcon.colcon_core.environment:checking '/home/mr_robot/robot_ws/install/ydlidar_ros2_driver' for CMake config files
+[63.259s] Level 1:colcon.colcon_core.shell:create_environment_hook('ydlidar_ros2_driver', 'cmake_prefix_path')
+[63.259s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mr_robot/robot_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/hook/cmake_prefix_path.ps1'
+[63.260s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mr_robot/robot_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/hook/cmake_prefix_path.dsv'
+[63.260s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mr_robot/robot_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/hook/cmake_prefix_path.sh'
+[63.261s] Level 1:colcon.colcon_core.environment:checking '/home/mr_robot/robot_ws/install/ydlidar_ros2_driver/lib'
+[63.261s] Level 1:colcon.colcon_core.environment:checking '/home/mr_robot/robot_ws/install/ydlidar_ros2_driver/bin'
+[63.261s] Level 1:colcon.colcon_core.environment:checking '/home/mr_robot/robot_ws/install/ydlidar_ros2_driver/lib/pkgconfig/ydlidar_ros2_driver.pc'
+[63.261s] Level 1:colcon.colcon_core.environment:checking '/home/mr_robot/robot_ws/install/ydlidar_ros2_driver/lib/python3.10/site-packages'
+[63.262s] Level 1:colcon.colcon_core.environment:checking '/home/mr_robot/robot_ws/install/ydlidar_ros2_driver/bin'
+[63.262s] INFO:colcon.colcon_core.shell:Creating package script '/home/mr_robot/robot_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/package.ps1'
+[63.263s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/mr_robot/robot_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/package.dsv'
+[63.263s] INFO:colcon.colcon_core.shell:Creating package script '/home/mr_robot/robot_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/package.sh'
+[63.264s] INFO:colcon.colcon_core.shell:Creating package script '/home/mr_robot/robot_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/package.bash'
+[63.264s] INFO:colcon.colcon_core.shell:Creating package script '/home/mr_robot/robot_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/package.zsh'
+[63.265s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/mr_robot/robot_ws/install/ydlidar_ros2_driver/share/colcon-core/packages/ydlidar_ros2_driver)
+[63.265s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ydlidar_ros2_driver)
+[63.266s] Level 1:colcon.colcon_core.environment:checking '/home/mr_robot/robot_ws/install/ydlidar_ros2_driver' for CMake module files
+[63.266s] Level 1:colcon.colcon_core.environment:checking '/home/mr_robot/robot_ws/install/ydlidar_ros2_driver' for CMake config files
+[63.267s] Level 1:colcon.colcon_core.shell:create_environment_hook('ydlidar_ros2_driver', 'cmake_prefix_path')
+[63.267s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mr_robot/robot_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/hook/cmake_prefix_path.ps1'
+[63.267s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mr_robot/robot_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/hook/cmake_prefix_path.dsv'
+[63.268s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mr_robot/robot_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/hook/cmake_prefix_path.sh'
+[63.268s] Level 1:colcon.colcon_core.environment:checking '/home/mr_robot/robot_ws/install/ydlidar_ros2_driver/lib'
+[63.269s] Level 1:colcon.colcon_core.environment:checking '/home/mr_robot/robot_ws/install/ydlidar_ros2_driver/bin'
+[63.269s] Level 1:colcon.colcon_core.environment:checking '/home/mr_robot/robot_ws/install/ydlidar_ros2_driver/lib/pkgconfig/ydlidar_ros2_driver.pc'
+[63.269s] Level 1:colcon.colcon_core.environment:checking '/home/mr_robot/robot_ws/install/ydlidar_ros2_driver/lib/python3.10/site-packages'
+[63.269s] Level 1:colcon.colcon_core.environment:checking '/home/mr_robot/robot_ws/install/ydlidar_ros2_driver/bin'
+[63.270s] INFO:colcon.colcon_core.shell:Creating package script '/home/mr_robot/robot_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/package.ps1'
+[63.270s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/mr_robot/robot_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/package.dsv'
+[63.271s] INFO:colcon.colcon_core.shell:Creating package script '/home/mr_robot/robot_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/package.sh'
+[63.271s] INFO:colcon.colcon_core.shell:Creating package script '/home/mr_robot/robot_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/package.bash'
+[63.272s] INFO:colcon.colcon_core.shell:Creating package script '/home/mr_robot/robot_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/package.zsh'
+[63.272s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/mr_robot/robot_ws/install/ydlidar_ros2_driver/share/colcon-core/packages/ydlidar_ros2_driver)
+[63.273s] DEBUG:colcon.colcon_core.executor.sequential:run_until_complete 'ydlidar_ros2_driver' finished with '0'
+[63.273s] DEBUG:colcon.colcon_core.executor.sequential:closing loop
+[63.273s] DEBUG:colcon.colcon_core.executor.sequential:loop closed
+[63.273s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[63.282s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[63.283s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[63.283s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[63.294s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[63.294s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/mr_robot/robot_ws/install/local_setup.ps1'
+[63.296s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/mr_robot/robot_ws/install/_local_setup_util_ps1.py'
+[63.298s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/mr_robot/robot_ws/install/setup.ps1'
+[63.302s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/mr_robot/robot_ws/install/local_setup.sh'
+[63.303s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/mr_robot/robot_ws/install/_local_setup_util_sh.py'
+[63.304s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/mr_robot/robot_ws/install/setup.sh'
+[63.308s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/mr_robot/robot_ws/install/local_setup.bash'
+[63.309s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/mr_robot/robot_ws/install/setup.bash'
+[63.312s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/mr_robot/robot_ws/install/local_setup.zsh'
+[63.313s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/mr_robot/robot_ws/install/setup.zsh'

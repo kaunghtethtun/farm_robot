@@ -84,9 +84,9 @@ TRAJECTORY_BUILDER_2D.real_time_correlative_scan_matcher.rotation_delta_cost_wei
 --TRAJECTORY_BUILDER_2D.ceres_scan_matcher.rotation_weight = 0.1
 --TRAJECTORY_BUILDER_2D.ceres_scan_matcher.translation_weight = 2e2
 --TRAJECTORY_BUILDER_2D.ceres_scan_matcher.rotation_weight = 4e2
-TRAJECTORY_BUILDER_2D.motion_filter.max_time_seconds = 5
-TRAJECTORY_BUILDER_2D.motion_filter.max_distance_meters = 0.2
-TRAJECTORY_BUILDER_2D.motion_filter.max_angle_radians = math.rad(2)
+TRAJECTORY_BUILDER_2D.motion_filter.max_time_seconds = 0.1
+TRAJECTORY_BUILDER_2D.motion_filter.max_distance_meters = 0.001
+TRAJECTORY_BUILDER_2D.motion_filter.max_angle_radians = math.rad(0.01)
 
 POSE_GRAPH.optimize_every_n_nodes = 20
 MAP_BUILDER.num_background_threads = 6

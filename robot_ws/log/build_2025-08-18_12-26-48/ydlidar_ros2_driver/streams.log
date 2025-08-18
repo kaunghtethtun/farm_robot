@@ -1,0 +1,124 @@
+[0.016s] Invoking command in '/home/mr_robot/robot_ws/build/ydlidar_ros2_driver': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/mr_robot/robot_ws/src/farm_robot-main/ydlidar_ros2_driver-humble -DCMAKE_INSTALL_PREFIX=/home/mr_robot/robot_ws/install/ydlidar_ros2_driver
+[0.096s] -- The C compiler identification is GNU 11.4.0
+[0.174s] -- The CXX compiler identification is GNU 11.4.0
+[0.184s] -- Detecting C compiler ABI info
+[0.283s] -- Detecting C compiler ABI info - done
+[0.294s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.295s] -- Detecting C compile features
+[0.295s] -- Detecting C compile features - done
+[0.299s] -- Detecting CXX compiler ABI info
+[0.417s] -- Detecting CXX compiler ABI info - done
+[0.428s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.428s] -- Detecting CXX compile features
+[0.429s] -- Detecting CXX compile features - done
+[0.438s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.663s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.849s] -- Found rclcpp: 16.0.14 (/opt/ros/humble/share/rclcpp/cmake)
+[0.956s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.972s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.993s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.020s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.057s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.165s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.174s] -- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake)
+[1.232s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[1.256s] -- Looking for pthread.h
+[1.362s] -- Looking for pthread.h - found
+[1.362s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.469s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.470s] -- Found Threads: TRUE  
+[1.567s] -- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+[1.622s] -- Found visualization_msgs: 4.9.0 (/opt/ros/humble/share/visualization_msgs/cmake)
+[1.658s] -- Found std_srvs: 4.9.0 (/opt/ros/humble/share/std_srvs/cmake)
+[1.705s] -- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.881s] -- Added test 'copyright' to check source files copyright and LICENSE
+[1.885s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.886s] -- Configured cppcheck include dirs: /home/mr_robot/robot_ws/src/farm_robot-main/ydlidar_ros2_driver-humble/src
+[1.886s] -- Configured cppcheck exclude dirs and/or files: 
+[1.890s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[1.890s] -- Configured cpplint exclude dirs and/or files: 
+[1.891s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.893s] -- Added test 'lint_cmake' to check CMake code style
+[1.895s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[1.898s] -- Added test 'uncrustify' to check C / C++ code style
+[1.898s] -- Configured uncrustify additional arguments: 
+[1.900s] -- Added test 'xmllint' to check XML markup files
+[1.903s] -- Configuring done
+[1.922s] -- Generating done
+[1.930s] -- Build files have been written to: /home/mr_robot/robot_ws/build/ydlidar_ros2_driver
+[1.941s] Invoked command in '/home/mr_robot/robot_ws/build/ydlidar_ros2_driver' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/mr_robot/robot_ws/src/farm_robot-main/ydlidar_ros2_driver-humble -DCMAKE_INSTALL_PREFIX=/home/mr_robot/robot_ws/install/ydlidar_ros2_driver
+[1.943s] Invoking command in '/home/mr_robot/robot_ws/build/ydlidar_ros2_driver': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/mr_robot/robot_ws/build/ydlidar_ros2_driver -- -j12 -l12
+[2.020s] [ 25%] [32mBuilding CXX object CMakeFiles/ydlidar_ros2_driver_node.dir/src/ydlidar_ros2_driver_node.cpp.o[0m
+[2.020s] [ 50%] [32mBuilding CXX object CMakeFiles/ydlidar_ros2_driver_client.dir/src/ydlidar_ros2_driver_client.cpp.o[0m
+[5.508s] [01m[K/home/mr_robot/robot_ws/src/farm_robot-main/ydlidar_ros2_driver-humble/src/ydlidar_ros2_driver_node.cpp:[m[K In lambda function:
+[5.508s] [01m[K/home/mr_robot/robot_ws/src/farm_robot-main/ydlidar_ros2_driver-humble/src/ydlidar_ros2_driver_node.cpp:191:54:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Krequest_header[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[5.508s]   191 |     [&laser]([01;35m[Kconst std::shared_ptr<rmw_request_id_t> request_header[m[K,
+[5.508s]       |              [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~[m[K
+[5.508s] [01m[K/home/mr_robot/robot_ws/src/farm_robot-main/ydlidar_ros2_driver-humble/src/ydlidar_ros2_driver_node.cpp:192:56:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kreq[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[5.508s]   192 |   [01;35m[Kconst std::shared_ptr<std_srvs::srv::Empty::Request> req[m[K,
+[5.508s]       |   [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[5.508s] [01m[K/home/mr_robot/robot_ws/src/farm_robot-main/ydlidar_ros2_driver-humble/src/ydlidar_ros2_driver_node.cpp:193:51:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kresponse[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[5.508s]   193 |   [01;35m[Kstd::shared_ptr<std_srvs::srv::Empty::Response> response[m[K) -> bool
+[5.508s]       |   [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~[m[K
+[5.528s] [01m[K/home/mr_robot/robot_ws/src/farm_robot-main/ydlidar_ros2_driver-humble/src/ydlidar_ros2_driver_node.cpp:[m[K In lambda function:
+[5.529s] [01m[K/home/mr_robot/robot_ws/src/farm_robot-main/ydlidar_ros2_driver-humble/src/ydlidar_ros2_driver_node.cpp:201:54:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Krequest_header[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[5.529s]   201 |     [&laser]([01;35m[Kconst std::shared_ptr<rmw_request_id_t> request_header[m[K,
+[5.529s]       |              [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~[m[K
+[5.529s] [01m[K/home/mr_robot/robot_ws/src/farm_robot-main/ydlidar_ros2_driver-humble/src/ydlidar_ros2_driver_node.cpp:202:56:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kreq[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[5.529s]   202 |   [01;35m[Kconst std::shared_ptr<std_srvs::srv::Empty::Request> req[m[K,
+[5.529s]       |   [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[5.529s] [01m[K/home/mr_robot/robot_ws/src/farm_robot-main/ydlidar_ros2_driver-humble/src/ydlidar_ros2_driver_node.cpp:203:51:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kresponse[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[5.529s]   203 |   [01;35m[Kstd::shared_ptr<std_srvs::srv::Empty::Response> response[m[K) -> bool
+[5.529s]       |   [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~[m[K
+[10.049s] [ 75%] [32m[1mLinking CXX executable ydlidar_ros2_driver_node[0m
+[10.520s] [ 75%] Built target ydlidar_ros2_driver_node
+[13.069s] [100%] [32m[1mLinking CXX executable ydlidar_ros2_driver_client[0m
+[13.582s] [100%] Built target ydlidar_ros2_driver_client
+[13.599s] Invoked command in '/home/mr_robot/robot_ws/build/ydlidar_ros2_driver' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/mr_robot/robot_ws/build/ydlidar_ros2_driver -- -j12 -l12
+[13.601s] Invoking command in '/home/mr_robot/robot_ws/build/ydlidar_ros2_driver': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/mr_robot/robot_ws/build/ydlidar_ros2_driver
+[13.612s] -- Install configuration: ""
+[13.612s] -- Installing: /home/mr_robot/robot_ws/install/ydlidar_ros2_driver/lib/ydlidar_ros2_driver/ydlidar_ros2_driver_node
+[13.615s] -- Set runtime path of "/home/mr_robot/robot_ws/install/ydlidar_ros2_driver/lib/ydlidar_ros2_driver/ydlidar_ros2_driver_node" to ""
+[13.615s] -- Installing: /home/mr_robot/robot_ws/install/ydlidar_ros2_driver/lib/ydlidar_ros2_driver/ydlidar_ros2_driver_client
+[13.619s] -- Set runtime path of "/home/mr_robot/robot_ws/install/ydlidar_ros2_driver/lib/ydlidar_ros2_driver/ydlidar_ros2_driver_client" to ""
+[13.619s] -- Installing: /home/mr_robot/robot_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/launch
+[13.619s] -- Installing: /home/mr_robot/robot_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/launch/ydlidar.py
+[13.619s] -- Installing: /home/mr_robot/robot_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/launch/ydlidar_launch.py
+[13.620s] -- Installing: /home/mr_robot/robot_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/launch/ydlidar_launch_view.py
+[13.620s] -- Installing: /home/mr_robot/robot_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params
+[13.620s] -- Installing: /home/mr_robot/robot_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/GS2.yaml
+[13.620s] -- Installing: /home/mr_robot/robot_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/sdm15.yaml
+[13.621s] -- Installing: /home/mr_robot/robot_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/TG.yaml
+[13.621s] -- Installing: /home/mr_robot/robot_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/Tmini-Plus-SH.yaml
+[13.621s] -- Installing: /home/mr_robot/robot_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/G6.yaml
+[13.621s] -- Installing: /home/mr_robot/robot_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/Tmini.yaml
+[13.622s] -- Installing: /home/mr_robot/robot_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/X2.yaml
+[13.622s] -- Installing: /home/mr_robot/robot_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/TEA.yaml
+[13.622s] -- Installing: /home/mr_robot/robot_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/GS5.yaml
+[13.623s] -- Installing: /home/mr_robot/robot_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/X4-Pro.yaml
+[13.623s] -- Installing: /home/mr_robot/robot_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/ydlidar.yaml
+[13.623s] -- Installing: /home/mr_robot/robot_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/X3.yaml
+[13.623s] -- Installing: /home/mr_robot/robot_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/G2.yaml
+[13.624s] -- Installing: /home/mr_robot/robot_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/G1.yaml
+[13.624s] -- Installing: /home/mr_robot/robot_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/X4.yaml
+[13.624s] -- Installing: /home/mr_robot/robot_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/G4.yaml
+[13.625s] -- Installing: /home/mr_robot/robot_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/startup
+[13.625s] -- Installing: /home/mr_robot/robot_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/startup/initenv.sh
+[13.625s] -- Installing: /home/mr_robot/robot_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/config
+[13.625s] -- Installing: /home/mr_robot/robot_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/config/ydlidar.rviz
+[13.626s] -- Installing: /home/mr_robot/robot_ws/install/ydlidar_ros2_driver/share/ament_index/resource_index/package_run_dependencies/ydlidar_ros2_driver
+[13.626s] -- Installing: /home/mr_robot/robot_ws/install/ydlidar_ros2_driver/share/ament_index/resource_index/parent_prefix_path/ydlidar_ros2_driver
+[13.626s] -- Installing: /home/mr_robot/robot_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/environment/ament_prefix_path.sh
+[13.626s] -- Installing: /home/mr_robot/robot_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/environment/ament_prefix_path.dsv
+[13.626s] -- Installing: /home/mr_robot/robot_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/environment/path.sh
+[13.627s] -- Installing: /home/mr_robot/robot_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/environment/path.dsv
+[13.627s] -- Installing: /home/mr_robot/robot_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/local_setup.bash
+[13.627s] -- Installing: /home/mr_robot/robot_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/local_setup.sh
+[13.627s] -- Installing: /home/mr_robot/robot_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/local_setup.zsh
+[13.627s] -- Installing: /home/mr_robot/robot_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/local_setup.dsv
+[13.628s] -- Installing: /home/mr_robot/robot_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/package.dsv
+[13.628s] -- Installing: /home/mr_robot/robot_ws/install/ydlidar_ros2_driver/share/ament_index/resource_index/packages/ydlidar_ros2_driver
+[13.628s] -- Installing: /home/mr_robot/robot_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/cmake/ydlidar_ros2_driverConfig.cmake
+[13.628s] -- Installing: /home/mr_robot/robot_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/cmake/ydlidar_ros2_driverConfig-version.cmake
+[13.628s] -- Installing: /home/mr_robot/robot_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/package.xml
+[13.631s] Invoked command in '/home/mr_robot/robot_ws/build/ydlidar_ros2_driver' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/mr_robot/robot_ws/build/ydlidar_ros2_driver

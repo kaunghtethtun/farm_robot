@@ -1,0 +1,77 @@
+[0.018s] Invoking command in '/home/mr_robot/robot_ws/build/wit_motion_imu_publisher': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/mr_robot/robot_ws/src/farm_robot-main/wit_motion_imu_publisher -DCMAKE_INSTALL_PREFIX=/home/mr_robot/robot_ws/install/wit_motion_imu_publisher
+[0.098s] -- The C compiler identification is GNU 11.4.0
+[0.178s] -- The CXX compiler identification is GNU 11.4.0
+[0.188s] -- Detecting C compiler ABI info
+[0.287s] -- Detecting C compiler ABI info - done
+[0.298s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.299s] -- Detecting C compile features
+[0.299s] -- Detecting C compile features - done
+[0.304s] -- Detecting CXX compiler ABI info
+[0.419s] -- Detecting CXX compiler ABI info - done
+[0.430s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.430s] -- Detecting CXX compile features
+[0.431s] -- Detecting CXX compile features - done
+[0.439s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.663s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.848s] -- Found rclcpp: 16.0.14 (/opt/ros/humble/share/rclcpp/cmake)
+[0.955s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.971s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.991s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.019s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.056s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.164s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.173s] -- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake)
+[1.235s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[1.261s] -- Looking for pthread.h
+[1.366s] -- Looking for pthread.h - found
+[1.367s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.473s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.474s] -- Found Threads: TRUE  
+[1.571s] -- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+[1.627s] -- Found tf2: 0.25.15 (/opt/ros/humble/share/tf2/cmake)
+[1.650s] -- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.795s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.795s] -- Configured cppcheck include dirs: 
+[1.795s] -- Configured cppcheck exclude dirs and/or files: 
+[1.797s] -- Added test 'lint_cmake' to check CMake code style
+[1.799s] -- Added test 'uncrustify' to check C / C++ code style
+[1.799s] -- Configured uncrustify additional arguments: 
+[1.800s] -- Added test 'xmllint' to check XML markup files
+[1.803s] -- Configuring done
+[1.818s] -- Generating done
+[1.824s] -- Build files have been written to: /home/mr_robot/robot_ws/build/wit_motion_imu_publisher
+[1.833s] Invoked command in '/home/mr_robot/robot_ws/build/wit_motion_imu_publisher' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/mr_robot/robot_ws/src/farm_robot-main/wit_motion_imu_publisher -DCMAKE_INSTALL_PREFIX=/home/mr_robot/robot_ws/install/wit_motion_imu_publisher
+[1.836s] Invoking command in '/home/mr_robot/robot_ws/build/wit_motion_imu_publisher': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/mr_robot/robot_ws/build/wit_motion_imu_publisher -- -j12 -l12
+[1.912s] [ 25%] [32mBuilding CXX object CMakeFiles/imu.dir/src/imupublisher.cpp.o[0m
+[1.913s] [ 50%] [32mBuilding C object CMakeFiles/imu.dir/src/wit_c_sdk.c.o[0m
+[1.913s] [ 75%] [32mBuilding C object CMakeFiles/imu.dir/src/serial.c.o[0m
+[1.952s] [01m[K/home/mr_robot/robot_ws/src/farm_robot-main/wit_motion_imu_publisher/src/wit_c_sdk.c:[m[K In function ‘[01m[KWitCanDataIn[m[K’:
+[1.952s] [01m[K/home/mr_robot/robot_ws/src/farm_robot-main/wit_motion_imu_publisher/src/wit_c_sdk.c:238:27:[m[K [01;35m[Kwarning: [m[Kthis statement may fall through [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wimplicit-fallthrough=-Wimplicit-fallthrough=]8;;[m[K]
+[1.952s]   238 |                         if[01;35m[K([m[KucData[1] == 0x53)
+[1.952s]       |                           [01;35m[K^[m[K
+[1.953s] [01m[K/home/mr_robot/robot_ws/src/farm_robot-main/wit_motion_imu_publisher/src/wit_c_sdk.c:251:19:[m[K [01;36m[Knote: [m[Khere
+[1.953s]   251 |                   [01;36m[Kcase[m[K WIT_PROTOCOL_CAN:
+[1.953s]       |                   [01;36m[K^~~~[m[K
+[7.609s] [100%] [32m[1mLinking CXX executable imu[0m
+[7.871s] [100%] Built target imu
+[7.887s] Invoked command in '/home/mr_robot/robot_ws/build/wit_motion_imu_publisher' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/mr_robot/robot_ws/build/wit_motion_imu_publisher -- -j12 -l12
+[7.890s] Invoking command in '/home/mr_robot/robot_ws/build/wit_motion_imu_publisher': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/mr_robot/robot_ws/build/wit_motion_imu_publisher
+[7.901s] -- Install configuration: ""
+[7.901s] -- Installing: /home/mr_robot/robot_ws/install/wit_motion_imu_publisher/lib/wit_motion_imu_publisher/imu
+[7.903s] -- Set runtime path of "/home/mr_robot/robot_ws/install/wit_motion_imu_publisher/lib/wit_motion_imu_publisher/imu" to ""
+[7.903s] -- Installing: /home/mr_robot/robot_ws/install/wit_motion_imu_publisher/share/ament_index/resource_index/package_run_dependencies/wit_motion_imu_publisher
+[7.903s] -- Installing: /home/mr_robot/robot_ws/install/wit_motion_imu_publisher/share/ament_index/resource_index/parent_prefix_path/wit_motion_imu_publisher
+[7.904s] -- Installing: /home/mr_robot/robot_ws/install/wit_motion_imu_publisher/share/wit_motion_imu_publisher/environment/ament_prefix_path.sh
+[7.904s] -- Installing: /home/mr_robot/robot_ws/install/wit_motion_imu_publisher/share/wit_motion_imu_publisher/environment/ament_prefix_path.dsv
+[7.904s] -- Installing: /home/mr_robot/robot_ws/install/wit_motion_imu_publisher/share/wit_motion_imu_publisher/environment/path.sh
+[7.904s] -- Installing: /home/mr_robot/robot_ws/install/wit_motion_imu_publisher/share/wit_motion_imu_publisher/environment/path.dsv
+[7.904s] -- Installing: /home/mr_robot/robot_ws/install/wit_motion_imu_publisher/share/wit_motion_imu_publisher/local_setup.bash
+[7.905s] -- Installing: /home/mr_robot/robot_ws/install/wit_motion_imu_publisher/share/wit_motion_imu_publisher/local_setup.sh
+[7.905s] -- Installing: /home/mr_robot/robot_ws/install/wit_motion_imu_publisher/share/wit_motion_imu_publisher/local_setup.zsh
+[7.905s] -- Installing: /home/mr_robot/robot_ws/install/wit_motion_imu_publisher/share/wit_motion_imu_publisher/local_setup.dsv
+[7.906s] -- Installing: /home/mr_robot/robot_ws/install/wit_motion_imu_publisher/share/wit_motion_imu_publisher/package.dsv
+[7.906s] -- Installing: /home/mr_robot/robot_ws/install/wit_motion_imu_publisher/share/ament_index/resource_index/packages/wit_motion_imu_publisher
+[7.906s] -- Installing: /home/mr_robot/robot_ws/install/wit_motion_imu_publisher/share/wit_motion_imu_publisher/cmake/wit_motion_imu_publisherConfig.cmake
+[7.906s] -- Installing: /home/mr_robot/robot_ws/install/wit_motion_imu_publisher/share/wit_motion_imu_publisher/cmake/wit_motion_imu_publisherConfig-version.cmake
+[7.907s] -- Installing: /home/mr_robot/robot_ws/install/wit_motion_imu_publisher/share/wit_motion_imu_publisher/package.xml
+[7.910s] Invoked command in '/home/mr_robot/robot_ws/build/wit_motion_imu_publisher' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/mr_robot/robot_ws/build/wit_motion_imu_publisher

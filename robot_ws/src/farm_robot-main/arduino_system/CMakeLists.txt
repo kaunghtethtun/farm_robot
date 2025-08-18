@@ -14,6 +14,7 @@ find_package(nav_msgs REQUIRED)
 find_package(tf2_ros REQUIRED) 
 find_package(tf2 REQUIRED) 
 find_package(tf2_geometry_msgs REQUIRED)
+find_package(sensor_msgs REQUIRED)
 
 
 if(BUILD_TESTING)
@@ -33,11 +34,11 @@ endif()
 # install(TARGETS serial_node DESTINATION lib/${PROJECT_NAME})
 
 add_executable(diff_controller src/twist_to_motor.cpp)
-ament_target_dependencies(diff_controller rclcpp geometry_msgs std_msgs)
+ament_target_dependencies(diff_controller rclcpp geometry_msgs std_msgs sensor_msgs)
 install(TARGETS diff_controller DESTINATION lib/${PROJECT_NAME})
 
 add_executable(odom src/base_controller.cpp)
-ament_target_dependencies(odom rclcpp geometry_msgs std_msgs nav_msgs tf2_ros tf2 tf2_geometry_msgs)
+ament_target_dependencies(odom rclcpp geometry_msgs std_msgs nav_msgs tf2_ros tf2 tf2_geometry_msgs sensor_msgs)
 install(TARGETS odom DESTINATION lib/${PROJECT_NAME})
 
 install(DIRECTORY

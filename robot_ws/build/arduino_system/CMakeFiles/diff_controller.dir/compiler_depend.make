@@ -707,6 +707,14 @@ CMakeFiles/diff_controller.dir/src/twist_to_motor.cpp.o: /home/mr_robot/robot_ws
   /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/float32_multi_array__builder.hpp \
   /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/float32_multi_array__traits.hpp \
   /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/float32_multi_array__type_support.hpp \
+  /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/joint_state.hpp \
+  /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/joint_state__struct.hpp \
+  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/header__struct.hpp \
+  /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/joint_state__builder.hpp \
+  /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/joint_state__traits.hpp \
+  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/header__traits.hpp \
+  /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/joint_state__type_support.hpp \
+  /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
   /usr/include/fcntl.h \
   /usr/include/x86_64-linux-gnu/bits/fcntl.h \
   /usr/include/x86_64-linux-gnu/bits/fcntl-linux.h \
@@ -741,6 +749,12 @@ CMakeFiles/diff_controller.dir/src/twist_to_motor.cpp.o: /home/mr_robot/robot_ws
 /usr/include/x86_64-linux-gnu/bits/termios-struct.h:
 
 /usr/include/termios.h:
+
+/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/joint_state__builder.hpp:
+
+/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/header__struct.hpp:
+
+/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/joint_state__struct.hpp:
 
 /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/float32_multi_array__struct.hpp:
 
@@ -841,6 +855,8 @@ CMakeFiles/diff_controller.dir/src/twist_to_motor.cpp.o: /home/mr_robot/robot_ws
 /opt/ros/humble/include/rclcpp/rclcpp/create_publisher.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/node_options.hpp:
+
+/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/header__traits.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_waitables_interface.hpp:
 
@@ -983,6 +999,8 @@ CMakeFiles/diff_controller.dir/src/twist_to_motor.cpp.o: /home/mr_robot/robot_ws
 /usr/include/c++/11/ratio:
 
 /usr/include/stdio.h:
+
+/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/rosidl_generator_cpp__visibility_control.hpp:
 
 /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_runtime_cpp/message_type_support_decl.hpp:
 
@@ -1268,6 +1286,8 @@ CMakeFiles/diff_controller.dir/src/twist_to_motor.cpp.o: /home/mr_robot/robot_ws
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_iovec.h:
 
+/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/joint_state__type_support.hpp:
+
 /usr/include/x86_64-linux-gnu/sys/ucontext.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/sigevent_t.h:
@@ -1391,6 +1411,8 @@ CMakeFiles/diff_controller.dir/src/twist_to_motor.cpp.o: /home/mr_robot/robot_ws
 /usr/include/x86_64-linux-gnu/bits/confname.h:
 
 /usr/include/x86_64-linux-gnu/bits/siginfo-arch.h:
+
+/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/joint_state__traits.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/types/timer_t.h:
 
@@ -2115,6 +2137,8 @@ CMakeFiles/diff_controller.dir/src/twist_to_motor.cpp.o: /home/mr_robot/robot_ws
 /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__builder.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/intra_process_setting.hpp:
+
+/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/joint_state.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/generic_publisher.hpp:
 

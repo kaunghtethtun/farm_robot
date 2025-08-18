@@ -1,0 +1,23 @@
+[0.018s] Invoking command in '/home/mr_robot/robot_ws/build/wit_motion_imu_publisher': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/mr_robot/robot_ws/build/wit_motion_imu_publisher -- -j12 -l12
+[0.081s] [35m[1mConsolidate compiler generated dependencies of target imu[0m
+[0.107s] [100%] Built target imu
+[0.124s] Invoked command in '/home/mr_robot/robot_ws/build/wit_motion_imu_publisher' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/mr_robot/robot_ws/build/wit_motion_imu_publisher -- -j12 -l12
+[0.126s] Invoking command in '/home/mr_robot/robot_ws/build/wit_motion_imu_publisher': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/mr_robot/robot_ws/build/wit_motion_imu_publisher
+[0.137s] -- Install configuration: ""
+[0.137s] -- Up-to-date: /home/mr_robot/robot_ws/install/wit_motion_imu_publisher/lib/wit_motion_imu_publisher/imu
+[0.137s] -- Up-to-date: /home/mr_robot/robot_ws/install/wit_motion_imu_publisher/share/ament_index/resource_index/package_run_dependencies/wit_motion_imu_publisher
+[0.138s] -- Up-to-date: /home/mr_robot/robot_ws/install/wit_motion_imu_publisher/share/ament_index/resource_index/parent_prefix_path/wit_motion_imu_publisher
+[0.138s] -- Up-to-date: /home/mr_robot/robot_ws/install/wit_motion_imu_publisher/share/wit_motion_imu_publisher/environment/ament_prefix_path.sh
+[0.138s] -- Up-to-date: /home/mr_robot/robot_ws/install/wit_motion_imu_publisher/share/wit_motion_imu_publisher/environment/ament_prefix_path.dsv
+[0.138s] -- Up-to-date: /home/mr_robot/robot_ws/install/wit_motion_imu_publisher/share/wit_motion_imu_publisher/environment/path.sh
+[0.138s] -- Up-to-date: /home/mr_robot/robot_ws/install/wit_motion_imu_publisher/share/wit_motion_imu_publisher/environment/path.dsv
+[0.138s] -- Up-to-date: /home/mr_robot/robot_ws/install/wit_motion_imu_publisher/share/wit_motion_imu_publisher/local_setup.bash
+[0.138s] -- Up-to-date: /home/mr_robot/robot_ws/install/wit_motion_imu_publisher/share/wit_motion_imu_publisher/local_setup.sh
+[0.138s] -- Up-to-date: /home/mr_robot/robot_ws/install/wit_motion_imu_publisher/share/wit_motion_imu_publisher/local_setup.zsh
+[0.138s] -- Up-to-date: /home/mr_robot/robot_ws/install/wit_motion_imu_publisher/share/wit_motion_imu_publisher/local_setup.dsv
+[0.138s] -- Installing: /home/mr_robot/robot_ws/install/wit_motion_imu_publisher/share/wit_motion_imu_publisher/package.dsv
+[0.138s] -- Up-to-date: /home/mr_robot/robot_ws/install/wit_motion_imu_publisher/share/ament_index/resource_index/packages/wit_motion_imu_publisher
+[0.139s] -- Up-to-date: /home/mr_robot/robot_ws/install/wit_motion_imu_publisher/share/wit_motion_imu_publisher/cmake/wit_motion_imu_publisherConfig.cmake
+[0.139s] -- Up-to-date: /home/mr_robot/robot_ws/install/wit_motion_imu_publisher/share/wit_motion_imu_publisher/cmake/wit_motion_imu_publisherConfig-version.cmake
+[0.139s] -- Up-to-date: /home/mr_robot/robot_ws/install/wit_motion_imu_publisher/share/wit_motion_imu_publisher/package.xml
+[0.140s] Invoked command in '/home/mr_robot/robot_ws/build/wit_motion_imu_publisher' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/mr_robot/robot_ws/build/wit_motion_imu_publisher

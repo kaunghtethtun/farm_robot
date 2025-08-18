@@ -21,7 +21,7 @@ windows:
   - EKF: 
       root: ~/
       panes:
-        - clear; source ~/.bashrc; ros2 launch farmbot_ekf ekf.launch.py 
+        - clear; source ~/.bashrc; cd /home/mr_robot/robot_ws/src; python3 camera.py
   - Carto: 
       root: ~/
       panes:

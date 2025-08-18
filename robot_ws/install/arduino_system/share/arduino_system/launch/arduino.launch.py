@@ -14,7 +14,7 @@ def generate_launch_description():
                     'wheel_base': 0.21,
                     'ticks_per_rev': 1317,
                     'publish_rate': 20.0,
-                    'pub_tf': False,
+                    'pub_tf': True,
                     'rpm_alpha': 0.5,
                     'odom_frame': 'odom',
                     'base_frame': 'base_footprint'

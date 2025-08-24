@@ -33,7 +33,7 @@ def generate_launch_description():
     use_rviz = LaunchConfiguration('use_rviz', default='false')
     map_dir = LaunchConfiguration(
         'map',
-        default='/home/mr_robot/data/maps/tt.yaml')
+        default='/home/mr_robot/data/maps/wytu.yaml')
 
     param_file_name = 'nav2_params.yaml'
     param_dir = LaunchConfiguration(

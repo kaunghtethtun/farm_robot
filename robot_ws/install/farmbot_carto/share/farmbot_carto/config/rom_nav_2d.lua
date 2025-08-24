@@ -23,11 +23,11 @@ options = {
   published_frame = "odom",
   odom_frame = "odom",
   provide_odom_frame = false,
-  publish_frame_projected_to_2d = false,
+  publish_frame_projected_to_2d = false,  -- false
   use_pose_extrapolator = true,
   use_odometry = true,
   use_nav_sat = false,
-  use_landmarks = true, -- jcan
+  use_landmarks = true, -- true
   num_laser_scans = 1,
   num_multi_echo_laser_scans = 0,
   num_subdivisions_per_laser_scan = 1,
@@ -51,7 +51,7 @@ MAP_BUILDER.use_trajectory_builder_2d = true
 --TRAJECTORY_BUILDER.collate_fixed_frame = true 
 TRAJECTORY_BUILDER.collate_landmarks = false
 
-TRAJECTORY_BUILDER_2D.submaps.num_range_data = 20
+TRAJECTORY_BUILDER_2D.submaps.num_range_data = 90
 TRAJECTORY_BUILDER_2D.min_range = 0.3
 --RPLidar A1
 TRAJECTORY_BUILDER_2D.max_range = 10.
@@ -84,9 +84,9 @@ TRAJECTORY_BUILDER_2D.real_time_correlative_scan_matcher.rotation_delta_cost_wei
 --TRAJECTORY_BUILDER_2D.ceres_scan_matcher.rotation_weight = 0.1
 --TRAJECTORY_BUILDER_2D.ceres_scan_matcher.translation_weight = 2e2
 --TRAJECTORY_BUILDER_2D.ceres_scan_matcher.rotation_weight = 4e2
-TRAJECTORY_BUILDER_2D.motion_filter.max_time_seconds = 0.1
-TRAJECTORY_BUILDER_2D.motion_filter.max_distance_meters = 0.001
-TRAJECTORY_BUILDER_2D.motion_filter.max_angle_radians = math.rad(0.01)
+TRAJECTORY_BUILDER_2D.motion_filter.max_time_seconds = 0.5  --0.1
+TRAJECTORY_BUILDER_2D.motion_filter.max_distance_meters = 0.1  --0.001
+TRAJECTORY_BUILDER_2D.motion_filter.max_angle_radians = math.rad(0.004)  --0.01
 
 POSE_GRAPH.optimize_every_n_nodes = 20
 MAP_BUILDER.num_background_threads = 6
@@ -135,3 +135,4 @@ TRAJECTORY_BUILDER.pure_localization_trimmer = {
 TRAJECTORY_BUILDER_2D.ceres_scan_matcher.ceres_solver_options.max_num_iterations = 5 
 
 return options
+

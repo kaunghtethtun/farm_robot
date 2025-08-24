@@ -1,0 +1,10 @@
+[01m[K/home/mr_robot/robot_ws/src/farm_robot-main/arduino_system/src/base_controller.cpp:[m[K In constructor ‘[01m[KDiffDriveOdomNode::DiffDriveOdomNode()[m[K’:
+[01m[K/home/mr_robot/robot_ws/src/farm_robot-main/arduino_system/src/base_controller.cpp:234:8:[m[K [01;35m[Kwarning: [m[K‘[01m[KDiffDriveOdomNode::have_last_imu_yaw_[m[K’ will be initialized after [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+  234 |   bool [01;35m[Khave_last_imu_yaw_[m[K;
+      |        [01;35m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/mr_robot/robot_ws/src/farm_robot-main/arduino_system/src/base_controller.cpp:231:10:[m[K [01;35m[Kwarning: [m[K  ‘[01m[Kdouble DiffDriveOdomNode::yaw_offset_[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+  231 |   double [01;35m[Kyaw_offset_[m[K;
+      |          [01;35m[K^~~~~~~~~~~[m[K
+[01m[K/home/mr_robot/robot_ws/src/farm_robot-main/arduino_system/src/base_controller.cpp:23:3:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+   23 |   [01;35m[KDiffDriveOdomNode[m[K()
+      |   [01;35m[K^~~~~~~~~~~~~~~~~[m[K

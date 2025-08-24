@@ -45,7 +45,7 @@ public:
 
         // Timer for reading serial data frequently
         serial_timer_ = this->create_wall_timer(
-            std::chrono::milliseconds(10), // 100 Hz serial read
+            std::chrono::milliseconds(50), // 20 Hz serial read
             std::bind(&MotorInterfaceNode::readSerial, this)
         );
 
@@ -180,9 +180,11 @@ private:
         enc_right_ = static_cast<int32_t>(values[1]);
         rpm_left_ = static_cast<float>(values[4]);
         rpm_right_ = static_cast<float>(values[3]);
-
+	
+	RCLCPP_INFO(this->get_logger(), "Right Encoder Count (%d), Left Encoder Count (%d)",enc_right_,enc_left_);
+                
         // Convert to radians
-        double counts_per_rev = 4096;
+        double counts_per_rev = 1320;
         left_encoder_rad_ = enc_left_ * 2.0 * M_PI / counts_per_rev;
         right_encoder_rad_ = enc_right_ * 2.0 * M_PI / counts_per_rev;
         left_velocity_rad_ = rpm_left_ * 2.0 * M_PI / 60.0;
@@ -223,11 +225,11 @@ private:
         double right = x + (theta * track_width / 2);
         double left  = x - (theta * track_width / 2);
 
-        double rpm_right = right * 60 / (M_PI * wheel_diameter_) * coefficient;
-        double rpm_left  = left  * 60 / (M_PI * wheel_diameter_) * coefficient;
+        double rpm_right = right * 60 / (M_PI * wheel_diameter_) *coefficient;
+        double rpm_left  = left  * 60 / (M_PI * wheel_diameter_) *coefficient;
 
-        rpm_right = std::clamp(rpm_right, -60.0, 60.0);
-        rpm_left  = std::clamp(rpm_left, -60.0, 60.0);
+        rpm_right = std::clamp(rpm_right, -40.0, 40.0);
+        rpm_left  = std::clamp(rpm_left, -40.0, 40.0);
 
         std::ostringstream ss;
         ss << "1," << rpm_right << "," << rpm_left << ";\n";

@@ -17,40 +17,41 @@
 
 using namespace std::chrono_literals;
 
-class OdomNode : public rclcpp::Node
+class DiffDriveOdomNode : public rclcpp::Node
 {
 public:
-  OdomNode()
-  : Node("odom_node"),
+  DiffDriveOdomNode()
+  : Node("diff_drive_odom"),
     x_(0.0), y_(0.0), theta_(0.0),
     last_left_count_(0), last_right_count_(0),
     have_prev_encoder_(false),
     left_rpm_(0.0f), right_rpm_(0.0f),
-    imu_received_(false), have_last_imu_yaw_(false)
+    imu_received_(false), have_last_imu_yaw_(false), 
+    yaw_offset_(0.0f)
   {
     // Parameters
-    wheel_radius_  = this->declare_parameter<double>("wheel_radius", 0.04);   // meters
-    wheel_base_    = this->declare_parameter<double>("wheel_base", 0.21);     // meters
-    ticks_per_rev_ = this->declare_parameter<int>("ticks_per_rev", 1317);
-    publish_rate_  = this->declare_parameter<double>("publish_rate", 20.0);   // Hz
+    wheel_radius_  = this->declare_parameter<double>("wheel_radius", 0.04);   // 0.08 m diameter / 2
+    wheel_base_    = this->declare_parameter<double>("wheel_base", 0.2);    // meters
+    ticks_per_rev_ = this->declare_parameter<int>("ticks_per_rev", 1320);
+    publish_rate_  = this->declare_parameter<double>("publish_rate", 20.0); // Hz
     pub_tf_        = this->declare_parameter<bool>("pub_tf", true);
-    rpm_alpha_     = this->declare_parameter<double>("rpm_alpha", 0.5);       // blending encoder vs RPM
-    imu_alpha_     = this->declare_parameter<double>("imu_alpha", 0.7);       // blending IMU vs encoders
+    rpm_alpha_     = this->declare_parameter<double>("rpm_alpha", 0.5);     // blend encoder vs RPM
+    imu_alpha_     = this->declare_parameter<double>("imu_alpha", 0.7);     // blend IMU vs encoders
     odom_frame_    = this->declare_parameter<std::string>("odom_frame", "odom");
     base_frame_    = this->declare_parameter<std::string>("base_frame", "base_footprint");
 
     // Subscribers
     encoder_sub_ = this->create_subscription<std_msgs::msg::Int32MultiArray>(
       "encoder_counts", 10,
-      std::bind(&OdomNode::encoderCallback, this, std::placeholders::_1));
+      std::bind(&DiffDriveOdomNode::encoderCallback, this, std::placeholders::_1));
 
     rpm_sub_ = this->create_subscription<std_msgs::msg::Float32MultiArray>(
       "wheel_rpm", 10,
-      std::bind(&OdomNode::rpmCallback, this, std::placeholders::_1));
+      std::bind(&DiffDriveOdomNode::rpmCallback, this, std::placeholders::_1));
 
     imu_sub_ = this->create_subscription<sensor_msgs::msg::Imu>(
       "imu/out", 10,
-      std::bind(&OdomNode::imuCallback, this, std::placeholders::_1));
+      std::bind(&DiffDriveOdomNode::imuCallback, this, std::placeholders::_1));
 
     // Publisher
     odom_pub_ = this->create_publisher<nav_msgs::msg::Odometry>("odom", 10);
@@ -65,9 +66,10 @@ public:
     // Timer for publishing odometry
     auto period_ms = static_cast<int>(1000.0 / publish_rate_);
     timer_ = this->create_wall_timer(std::chrono::milliseconds(period_ms),
-                                     std::bind(&OdomNode::update, this));
+                                     std::bind(&DiffDriveOdomNode::update, this));
 
-    RCLCPP_INFO(this->get_logger(), "OdomNode started (20 Hz, pub_tf=%s)", pub_tf_ ? "true" : "false");
+    RCLCPP_INFO(this->get_logger(), "DiffDriveOdomNode started (%.1f Hz, pub_tf=%s)",
+                publish_rate_, pub_tf_ ? "true" : "false");
   }
 
 private:
@@ -96,36 +98,50 @@ private:
     double roll, pitch, yaw;
     tf2::Matrix3x3(q).getRPY(roll, pitch, yaw);
 
-    imu_yaw_ = yaw;
-    imu_received_ = true;
     if (!have_last_imu_yaw_) {
-      last_imu_yaw_ = imu_yaw_;
-      have_last_imu_yaw_ = true;
+        yaw_offset_ = yaw;  // <-- capture initial heading
+        have_last_imu_yaw_ = true;
     }
+
+    imu_yaw_ = yaw - yaw_offset_;  // <-- normalize yaw so forward = 0
+    imu_received_ = true;
+    /*std::lock_guard<std::mutex> lk(mutex_); 
+    tf2::Quaternion q; 
+    tf2::fromMsg(msg->orientation, q); 
+    double roll, pitch, yaw; 
+    tf2::Matrix3x3(q).getRPY(roll, pitch, yaw); 
+    imu_yaw_ = yaw; 
+    imu_received_ = true; 
+    if (!have_last_imu_yaw_) 
+    { 
+      last_imu_yaw_ = imu_yaw_; 
+      have_last_imu_yaw_ = true; 
+    }*/
   }
 
   // --- Main update loop ---
   void update()
-  {
+{
     std::lock_guard<std::mutex> lk(mutex_);
     rclcpp::Time now = this->now();
     double dt = (now - last_time_).seconds();
     if (dt <= 0.0) return;
 
     if (!have_prev_encoder_) {
-      last_left_count_ = left_count_;
-      last_right_count_ = right_count_;
-      have_prev_encoder_ = true;
-      last_time_ = now;
-      return;
+        last_left_count_ = left_count_;
+        last_right_count_ = right_count_;
+        have_prev_encoder_ = true;
+        last_time_ = now;
+        return;
     }
 
-    // Encoder deltas
+    // --- Encoder deltas ---
     int delta_left = static_cast<int>(left_count_ - last_left_count_);
     int delta_right = static_cast<int>(right_count_ - last_right_count_);
     last_left_count_ = left_count_;
     last_right_count_ = right_count_;
 
+    // --- Translation distance ---
     double dist_per_rev = 2.0 * M_PI * wheel_radius_;
     double dist_left_enc = (static_cast<double>(delta_left) / ticks_per_rev_) * dist_per_rev;
     double dist_right_enc = (static_cast<double>(delta_right) / ticks_per_rev_) * dist_per_rev;
@@ -133,30 +149,24 @@ private:
     double vel_left_rpm = (static_cast<double>(left_rpm_) / 60.0) * dist_per_rev;
     double vel_right_rpm = (static_cast<double>(right_rpm_) / 60.0) * dist_per_rev;
 
-    double fused_left = (1.0 - rpm_alpha_) * dist_left_enc + rpm_alpha_ * (vel_left_rpm * dt);
-    double fused_right = (1.0 - rpm_alpha_) * dist_right_enc + rpm_alpha_ * (vel_right_rpm * dt);
+    // Fuse encoder + RPM for translation
+    double delta_s = ((1.0 - rpm_alpha_) * (dist_left_enc + dist_right_enc)/2.0
+                     + rpm_alpha_ * (vel_left_rpm + vel_right_rpm)/2.0 * dt);
 
-    double delta_s = (fused_right + fused_left) / 2.0;
-    double delta_theta_enc = (fused_right - fused_left) / wheel_base_;
-
-    // Use IMU yaw delta if available
-    double delta_theta = delta_theta_enc;
-    if (imu_received_ && have_last_imu_yaw_) {
-      double delta_theta_imu = std::atan2(std::sin(imu_yaw_ - last_imu_yaw_),
-                                          std::cos(imu_yaw_ - last_imu_yaw_));
-      delta_theta = imu_alpha_ * delta_theta_imu + (1.0 - imu_alpha_) * delta_theta_enc;
-      last_imu_yaw_ = imu_yaw_;
+    // --- Heading from IMU ---
+    if (imu_received_) {
+        theta_ = imu_yaw_;  // directly take yaw from IMU
     }
 
-    // Update position
-    double theta_mid = theta_ + delta_theta / 2.0;
-    x_ += delta_s * std::cos(theta_mid);
-    y_ += delta_s * std::sin(theta_mid);
-    theta_ = std::atan2(std::sin(theta_ + delta_theta), std::cos(theta_ + delta_theta));
+    // --- Update position ---
+    x_ += delta_s * std::cos(theta_);
+    y_ += delta_s * std::sin(theta_);
+    
 
-    // Velocities
+    // --- Velocities ---
     double vx = delta_s / dt;
-    double vth = delta_theta / dt;
+    double vth = 0.0;  // angular velocity optional, could also use IMU z-velocity
+    if (imu_received_) vth = 0.0; // or msg->angular_velocity.z if you want real-time
 
     // --- Publish odometry ---
     nav_msgs::msg::Odometry odom;
@@ -176,28 +186,30 @@ private:
     odom.twist.twist.linear.y = 0.0;
     odom.twist.twist.angular.z = vth;
 
-    // Covariance (tuned example)
+    // Covariance example
     for (int i = 0; i < 36; ++i) odom.pose.covariance[i] = 0.0;
-    odom.pose.covariance[0] = 1e-2;   // x
-    odom.pose.covariance[7] = 1e-2;   // y
-    odom.pose.covariance[35] = 3e-2;  // yaw
+    odom.pose.covariance[0] = 1e-2;
+    odom.pose.covariance[7] = 1e-2;
+    odom.pose.covariance[35] = 3e-2;
 
     odom_pub_->publish(odom);
 
+    // --- TF ---
     if (pub_tf_ && tf_broadcaster_) {
-      geometry_msgs::msg::TransformStamped t;
-      t.header.stamp = now;
-      t.header.frame_id = odom_frame_;
-      t.child_frame_id = base_frame_;
-      t.transform.translation.x = x_;
-      t.transform.translation.y = y_;
-      t.transform.translation.z = 0.0;
-      t.transform.rotation = odom.pose.pose.orientation;
-      tf_broadcaster_->sendTransform(t);
+        geometry_msgs::msg::TransformStamped t;
+        t.header.stamp = now;
+        t.header.frame_id = odom_frame_;
+        t.child_frame_id = base_frame_;
+        t.transform.translation.x = x_;
+        t.transform.translation.y = y_;
+        t.transform.translation.z = 0.0;
+        t.transform.rotation = odom.pose.pose.orientation;
+        tf_broadcaster_->sendTransform(t);
     }
 
     last_time_ = now;
-  }
+}
+
 
   // --- Members ---
   double wheel_radius_, wheel_base_;
@@ -215,6 +227,7 @@ private:
   rclcpp::Time last_time_;
 
   double imu_yaw_;
+  double yaw_offset_;
   double last_imu_yaw_;
   bool imu_received_;
   bool have_last_imu_yaw_;
@@ -231,7 +244,7 @@ private:
 int main(int argc, char ** argv)
 {
   rclcpp::init(argc, argv);
-  auto node = std::make_shared<OdomNode>();
+  auto node = std::make_shared<DiffDriveOdomNode>();
   rclcpp::spin(node);
   rclcpp::shutdown();
   return 0;
